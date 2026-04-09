@@ -86,12 +86,12 @@ body::before{
 /* ═══════ FRAMER PILL NAV ═══════════════════════════════════ */
 .nav-wrap{
   position:fixed;top:14px;left:50%;transform:translateX(-50%);
-  z-index:300;width:calc(100% - 40px);max-width:1080px;
+  z-index:300;width:calc(100% - 40px);max-width:1000px;
   animation:nav-slide .6s var(--e1) both;
 }
 .nav{
   display:flex;align-items:center;justify-content:space-between;
-  padding:0 10px 0 20px;height:56px;gap:8px;
+  padding:0 8px;height:52px;gap:4px;
   background:rgba(40,28,8,.55);
   backdrop-filter:blur(28px) saturate(2.2);-webkit-backdrop-filter:blur(28px) saturate(2.2);
   border:1px solid rgba(201,168,76,.18);border-radius:var(--rp);
@@ -99,14 +99,23 @@ body::before{
   box-shadow:inset 0 1px 0 rgba(232,192,96,.1),0 4px 32px rgba(0,0,0,.35);
 }
 .nav.scrolled{box-shadow:inset 0 1px 0 rgba(232,192,96,.12),0 0 0 1px rgba(201,168,76,.2),0 8px 48px rgba(0,0,0,.6);}
-.nav-logo{height:28px;width:auto;display:block;flex-shrink:0;}
-.nav-links{display:flex;gap:0;list-style:none;margin:0 auto;}
+.nav-logo-wrap{display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:0 12px;}
+.nav-logo{height:30px;width:auto;display:block;}
+.nav-links{display:flex;gap:0;list-style:none;flex:1;}
 .nav-links a{
   font-size:13px;font-weight:500;color:#ffffff;
   padding:7px 16px;border-radius:var(--rp);display:block;
   transition:color .15s,background .15s;white-space:nowrap;
 }
 .nav-links a:hover{color:#fff;background:rgba(201,168,76,.12);}
+.nav-links:last-of-type{justify-content:flex-end;}
+.nbtn-inline{
+  font-size:12px;font-weight:600;letter-spacing:.02em;
+  padding:7px 18px;background:var(--gold);color:#0A0A0A;
+  border-radius:var(--rp);cursor:pointer;white-space:nowrap;
+  transition:background .18s,transform .15s;display:block;
+}
+.nbtn-inline:hover{background:var(--gold2);transform:translateY(-1px);}
 .nbtn{
   font-size:12px;font-weight:600;letter-spacing:.02em;
   padding:8px 22px;background:var(--gold);color:#0A0A0A;
@@ -586,17 +595,19 @@ body::before{
 <!-- PILL NAV -->
 <div class="nav-wrap">
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <a href="#top" aria-label="Kinzer Coins home">
-      <img src="logo.png" alt="Kinzer Coins" class="nav-logo"/>
-    </a>
     <ul class="nav-links" role="list">
       <li><a href="#why">Why 5</a></li>
       <li><a href="#cats">Categories</a></li>
       <li><a href="#start">Get Started</a></li>
+    </ul>
+    <a href="#top" class="nav-logo-wrap" aria-label="Kinzer Coins home">
+      <img src="logo.png" alt="Kinzer Coins" class="nav-logo"/>
+    </a>
+    <ul class="nav-links" role="list">
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://kinzercoins.com" target="_blank" rel="noopener" class="nbtn-inline">Start Collecting</a></li>
     </ul>
-    <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="nbtn">Start Collecting</a>
     <button class="hbg" id="hmb" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
