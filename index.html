@@ -99,13 +99,9 @@ body::before{
   box-shadow:inset 0 1px 0 rgba(232,192,96,.1),0 4px 32px rgba(0,0,0,.35);
 }
 .nav.scrolled{box-shadow:inset 0 1px 0 rgba(232,192,96,.12),0 0 0 1px rgba(201,168,76,.2),0 8px 48px rgba(0,0,0,.6);}
-.nav-logo-wrap{
-  position:absolute;left:50%;transform:translateX(-50%);
-  display:flex;align-items:center;
-}
+.nav-logo-wrap{display:flex;align-items:center;flex-shrink:0;padding:0 8px;}
 .nav-logo{height:30px;width:auto;display:block;}
-.nav-links{display:flex;gap:0;list-style:none;}
-.nav-links:last-of-type{justify-content:flex-end;}
+.nav-links{display:flex;gap:0;list-style:none;margin-left:auto;align-items:center;}
 .nav-links a{
   font-size:13px;font-weight:500;color:#ffffff;
   padding:7px 16px;border-radius:var(--rp);display:block;
@@ -629,15 +625,13 @@ body::before{
 <!-- PILL NAV -->
 <div class="nav-wrap">
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <ul class="nav-links" role="list">
-      <li><a href="#why">Why 5</a></li>
-      <li><a href="#cats">Categories</a></li>
-      <li><a href="#start">Get Started</a></li>
-    </ul>
     <a href="#top" class="nav-logo-wrap" aria-label="Kinzer Coins home">
       <img src="logo.png" alt="Kinzer Coins" class="nav-logo"/>
     </a>
     <ul class="nav-links" role="list">
+      <li><a href="#why">Why 5</a></li>
+      <li><a href="#cats">Categories</a></li>
+      <li><a href="#start">Get Started</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="https://kinzercoins.com" target="_blank" rel="noopener" class="nbtn-inline">Start Collecting</a></li>
