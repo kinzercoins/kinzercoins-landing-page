@@ -388,7 +388,39 @@ body::before{
 .cblk:nth-child(even) .cin>*{direction:ltr;}
 
 /* framer feature card (coin) */
-.ccwrap{display:flex;align-items:center;justify-content:center;}
+.ccwrap{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;}
+
+/* ═══════ PORTRAIT CARDS ════════════════════════════════════ */
+.cportrait{
+  width:100%;max-width:clamp(200px,26vw,340px);
+  border-radius:16px;overflow:hidden;
+  border:1px solid var(--gbdr);
+  background:var(--bg4);
+}
+.cp-era{
+  font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold);padding:10px 14px 8px;
+}
+.cp-img-wrap{
+  width:100%;height:180px;overflow:hidden;position:relative;
+}
+.cp-img{
+  width:100%;height:100%;object-fit:cover;object-position:top center;
+  filter:sepia(.3) brightness(.8) contrast(1.15);
+  transition:transform .5s var(--e1);
+}
+.cportrait:hover .cp-img{transform:scale(1.05);}
+.cp-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to bottom,transparent 35%,rgba(0,0,0,.78) 100%);
+}
+.cp-meta{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:12px 14px;
+  display:flex;align-items:flex-end;justify-content:space-between;
+}
+.cp-name{font-size:14px;font-weight:700;color:#fff;line-height:1.2;}
+.cp-dates{font-size:10px;color:var(--gold);font-weight:600;white-space:nowrap;}
 .ccoin-frame{
   width:clamp(200px,26vw,340px);aspect-ratio:1;
   border-radius:24px;
@@ -743,27 +775,37 @@ body::before{
     </div>
 
     <div class="cblk"><div class="cin">
-      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc1-bg"></div><div class="ccoin-num">01</div><div class="ccoin-coin cc1"><div class="ccs"></div></div></div></div>
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc1-bg"></div><div class="ccoin-num">01</div><div class="ccoin-coin cc1"><div class="ccs"></div></div></div>
+      <div class="cportrait"><div class="cp-era">Who minted this coin</div><div class="cp-img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Statua_di_Costantino_ai_musei_capitolini.jpg/330px-Statua_di_Costantino_ai_musei_capitolini.jpg" alt="Constantine I" class="cp-img"/><div class="cp-overlay"></div><div class="cp-meta"><div class="cp-name">Constantine I</div><div class="cp-dates">272–337 AD</div></div></div></div>
+      </div>
       <div class="rv rv-d1"><span class="cnum">01</span><div class="ctags"><span class="tg tgp">Most Popular</span><span class="tg tga">Rome · Bronze</span></div><h3 class="ch3">Roman Imperial Bronze</h3><p class="cwhy">These are the coins that paid legionaries, bought bread in Roman markets, and changed hands a thousand times before ending up in your collection. The most accessible ancient coins in the world - connected to emperors you already know.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$15–$45 circulated</span><span class="fp">$50–$150 fine</span><span class="fp">$150+ exceptional</span></div></div><blockquote class="cst">"A Fine Constantinian bronze can be had for under $40. That's 1,700 years old with a real emperor's face - for less than dinner."</blockquote><a href="https://kinzercoins.com/collections/roman-empire" target="_blank" rel="noopener" class="btn bk">Start with Roman Bronze →</a></div>
     </div></div>
 
     <div class="cblk"><div class="cin">
-      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc2-bg"></div><div class="ccoin-num">02</div><div class="ccoin-coin cc2"><div class="ccs"></div></div></div></div>
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc2-bg"></div><div class="ccoin-num">02</div><div class="ccoin-coin cc2"><div class="ccs"></div></div></div>
+      <div class="cportrait"><div class="cp-era">Who minted this coin</div><div class="cp-img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg/330px-Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg" alt="Julius Caesar" class="cp-img"/><div class="cp-overlay"></div><div class="cp-meta"><div class="cp-name">Julius Caesar</div><div class="cp-dates">100–44 BC</div></div></div></div>
+      </div>
       <div class="rv rv-d1"><span class="cnum">02</span><div class="ctags"><span class="tg tgp">Best Value</span><span class="tg tga">Rome · Silver</span></div><h3 class="ch3">Roman Silver Denarii</h3><p class="cwhy">The backbone of the Roman economy for 400 years. Julius Caesar paid his soldiers in denarii. For $50–$100, you can own a silver coin bearing the portrait of an emperor you've heard of.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$30–$60 worn</span><span class="fp">$60–$120 VF</span><span class="fp">$150+ choice</span></div></div><blockquote class="cst">"A denarius of Trajan in VF runs about $65–90. That coin was minted while the Pantheon was being built."</blockquote><a href="https://kinzercoins.com/collections/roman-empire" target="_blank" rel="noopener" class="btn bk">Start with Silver Denarii →</a></div>
     </div></div>
 
     <div class="cblk"><div class="cin">
-      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc3-bg"></div><div class="ccoin-num">03</div><div class="ccoin-coin cc3"><div class="ccs"></div></div></div></div>
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc3-bg"></div><div class="ccoin-num">03</div><div class="ccoin-coin cc3"><div class="ccs"></div></div></div>
+      <div class="cportrait"><div class="cp-era">Who minted this coin</div><div class="cp-img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg/330px-Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg" alt="Alexander the Great" class="cp-img"/><div class="cp-overlay"></div><div class="cp-meta"><div class="cp-name">Alexander the Great</div><div class="cp-dates">356–323 BC</div></div></div></div>
+      </div>
       <div class="rv rv-d1"><span class="cnum">03</span><div class="ctags"><span class="tg tgp">Most Artistic</span><span class="tg tga">Greece · Bronze</span></div><h3 class="ch3">Ancient Greek Bronze</h3><p class="cwhy">Before Rome, hundreds of city-states minted coins with astonishing variety. Owls for Athens, a bull for Thurium, a bee for Ephesus. Greek bronze from 300–100 BC are often the most visually striking coins in any collection.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$20–$55 common</span><span class="fp">$55–$130 scarce</span><span class="fp">$150+ rare</span></div></div><blockquote class="cst">"A well-struck bronze from Corinth - 2,300 years old - costs about the same as a nice dinner."</blockquote><a href="https://kinzercoins.com/collections/greek" target="_blank" rel="noopener" class="btn bk">Start with Greek Bronze →</a></div>
     </div></div>
 
     <div class="cblk"><div class="cin">
-      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc4-bg"></div><div class="ccoin-num">04</div><div class="ccoin-coin cc4"><div class="ccs"></div></div></div></div>
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc4-bg"></div><div class="ccoin-num">04</div><div class="ccoin-coin cc4"><div class="ccs"></div></div></div>
+      <div class="cportrait"><div class="cp-era">Who minted this coin</div><div class="cp-img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mosaic_of_Justinianus_I_-_Basilica_San_Vitale_%28Ravenna%29.jpg/330px-Mosaic_of_Justinianus_I_-_Basilica_San_Vitale_%28Ravenna%29.jpg" alt="Emperor Justinian I" class="cp-img"/><div class="cp-overlay"></div><div class="cp-meta"><div class="cp-name">Emperor Justinian I</div><div class="cp-dates">527–565 AD</div></div></div></div>
+      </div>
       <div class="rv rv-d1"><span class="cnum">04</span><div class="ctags"><span class="tg tgp">Most Beautiful</span><span class="tg tga">Byzantium · Gold</span></div><h3 class="ch3">Byzantine Gold Fractions</h3><p class="cwhy">The most visually spectacular ancient coins you can buy for under $150. Gold tremisses show Christ, the Virgin Mary, or an emperor in full regalia - with artistry that rivals modern jewelry.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$80–$150 tremissis</span><span class="fp">$150–$400 solidus</span><span class="fp">$400+ rare</span></div></div><blockquote class="cst">"A gold tremissis in Fine - 1,500 years old, actual gold - starts around $95. Nothing competes on beauty per dollar."</blockquote><a href="https://kinzercoins.com/collections/byzantine-empire" target="_blank" rel="noopener" class="btn bk">Start with Byzantine Gold →</a></div>
     </div></div>
 
     <div class="cblk"><div class="cin">
-      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc5-bg"></div><div class="ccoin-num">05</div><div class="ccoin-coin cc5"><div class="ccs"></div></div></div></div>
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc5-bg"></div><div class="ccoin-num">05</div><div class="ccoin-coin cc5"><div class="ccs"></div></div></div>
+      <div class="cportrait"><div class="cp-era">Who minted this coin</div><div class="cp-img-wrap"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/M%C3%BCnchen_SMAEK_2019-03-23n.jpg/330px-M%C3%BCnchen_SMAEK_2019-03-23n.jpg" alt="Emperor Hadrian" class="cp-img"/><div class="cp-overlay"></div><div class="cp-meta"><div class="cp-name">Emperor Hadrian</div><div class="cp-dates">117–138 AD</div></div></div></div>
+      </div>
       <div class="rv rv-d1"><span class="cnum">05</span><div class="ctags"><span class="tg tgp">Most Varied</span><span class="tg tga">Rome · Provincial</span></div><h3 class="ch3">Provincial Roman Bronze</h3><p class="cwhy">Minted by local cities under Roman rule. You get local gods, exotic iconography, and city names that read like a tour through the ancient world: Antioch, Alexandria, Caesarea, Ephesus. The most affordable Roman coins with portraits.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$12–$35 common</span><span class="fp">$35–$90 scarce</span><span class="fp">$90+ rare</span></div></div><blockquote class="cst">"A provincial from Antioch - one of the great cities of antiquity - can start as low as $18."</blockquote><a href="https://kinzercoins.com/collections/roman-empire" target="_blank" rel="noopener" class="btn bk">Start with Provincial Bronze →</a></div>
     </div></div>
   </div>
