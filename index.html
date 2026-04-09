@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>The 5 Best Ancient Coins for New Collectors | Kinzer Coins</title>
+  <meta name="description" content="Begin your ancient coin collection with confidence. The 5 best categories — authentic, affordable, and historically meaningful."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+/* ═══════ FRAMER DESIGN TOKENS ══════════════════════════════ */
+:root{
+  --bg:    #0A0A0A;
+  --bg2:   #0F0F0F;
+  --bg3:   #141414;
+  --bg4:   #1A1A1A;
+  --card:  rgba(255,255,255,.04);
+  --card2: rgba(255,255,255,.07);
+  --ink:   #FFFFFF;
+  --ink2:  #E0DDD6;
+  --ink3:  #B8B4AC;
+  --ink4:  #8A8680;
+  --gold:  #C9A84C;
+  --gold2: #E8C060;
+  --gdark: #9A7830;
+  --gbg:   rgba(201,168,76,.1);
+  --gbdr:  rgba(201,168,76,.28);
+  --glow:  rgba(201,168,76,.15);
+  --line:  rgba(255,255,255,.08);
+  --line2: rgba(255,255,255,.04);
+
+  --f: 'Inter', system-ui, sans-serif;
+  --e1: cubic-bezier(.16,1,.3,1);
+  --e2: cubic-bezier(.22,1,.36,1);
+  --e3: cubic-bezier(.4,0,.2,1);
+  --g:  clamp(20px,5vw,72px);
+  --mx: 1120px;
+  --nav-h: 64px;
+  --r:  16px;
+  --rp: 9999px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+::selection{background:var(--gold);color:#0A0A0A;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px);}
+body{font-family:var(--f);background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+img{display:block;max-width:100%;}
+::-webkit-scrollbar{width:2px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--gold);}
+
+/* ═══════ KEYFRAMES ═════════════════════════════════════════ */
+@keyframes nav-slide{from{opacity:0;transform:translateY(-12px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fup{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+@keyframes lup{from{transform:translateY(110%);}to{transform:translateY(0);}}
+@keyframes pulse-ring{0%{transform:scale(1);opacity:.6;}100%{transform:scale(1.5);opacity:0;}}
+@keyframes badge-dot{0%,100%{opacity:1;}50%{opacity:.4;}}
+@keyframes float-y{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+@keyframes mqs{to{transform:translateX(-50%);}}
+
+/* ═══════ NOISE OVERLAY ─────────────────────────────────── */
+body::before{
+  content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+  opacity:.4;
+}
+
+/* ═══════ FRAMER PILL NAV ═══════════════════════════════════ */
+.nav-wrap{
+  position:fixed;top:14px;left:50%;transform:translateX(-50%);
+  z-index:300;width:calc(100% - 40px);max-width:1080px;
+  animation:nav-slide .6s var(--e1) both;
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 10px 0 20px;height:56px;gap:8px;
+  background:rgba(40,28,8,.55);
+  backdrop-filter:blur(28px) saturate(2.2);-webkit-backdrop-filter:blur(28px) saturate(2.2);
+  border:1px solid rgba(201,168,76,.18);border-radius:var(--rp);
+  transition:box-shadow .3s,background .3s;
+  box-shadow:inset 0 1px 0 rgba(232,192,96,.1),0 4px 32px rgba(0,0,0,.35);
+}
+.nav.scrolled{box-shadow:inset 0 1px 0 rgba(232,192,96,.12),0 0 0 1px rgba(201,168,76,.2),0 8px 48px rgba(0,0,0,.6);}
+.nav-logo{height:28px;width:auto;display:block;flex-shrink:0;}
+.nav-links{display:flex;gap:0;list-style:none;margin:0 auto;}
+.nav-links a{
+  font-size:13px;font-weight:500;color:#ffffff;
+  padding:7px 16px;border-radius:var(--rp);display:block;
+  transition:color .15s,background .15s;white-space:nowrap;
+}
+.nav-links a:hover{color:#fff;background:rgba(201,168,76,.12);}
+.nbtn{
+  font-size:12px;font-weight:600;letter-spacing:.02em;
+  padding:8px 22px;background:var(--gold);color:#0A0A0A;
+  border:none;border-radius:var(--rp);cursor:pointer;flex-shrink:0;
+  transition:background .18s,transform .15s,box-shadow .2s;white-space:nowrap;
+}
+.nbtn:hover{background:var(--gold2);transform:translateY(-1px);box-shadow:0 6px 24px rgba(201,168,76,.4);}
+.hbg{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:4.5px;padding:8px;}
+.hbg span{display:block;width:18px;height:1px;background:var(--ink2);transition:all .25s var(--e1);}
+.hbg.open span:nth-child(1){transform:translateY(5.5px) rotate(45deg);}
+.hbg.open span:nth-child(2){opacity:0;}
+.hbg.open span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg);}
+/* mobile nav */
+.mob-nav{
+  position:fixed;top:calc(var(--nav-h) + 20px);left:16px;right:16px;z-index:290;
+  background:rgba(14,14,14,.95);backdrop-filter:blur(24px);
+  border:0px solid transparent;border-radius:20px;
+  overflow:hidden;max-height:0;transition:max-height .4s var(--e1),border-width 0s .4s;
+  display:flex;flex-direction:column;
+}
+.mob-nav.open{max-height:400px;border-width:1px;border-color:var(--line);transition:max-height .4s var(--e1);}
+.mob-nav a{font-size:14px;font-weight:500;color:var(--ink2);padding:13px 20px;border-bottom:1px solid var(--line2);transition:color .15s,background .15s;}
+.mob-nav a:last-child{border-bottom:none;}
+.mob-nav a:hover{color:var(--gold);background:rgba(255,255,255,.03);}
+.mob-nav .nbtn{margin:14px 20px 18px;display:block;text-align:center;}
+
+/* ═══════ BUTTONS — FRAMER PILL STYLE ═══════════════════════ */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--f);font-size:13px;font-weight:600;
+  padding:13px 26px;border-radius:var(--rp);cursor:pointer;
+  position:relative;overflow:hidden;
+  transition:transform .18s var(--e1),box-shadow .18s,background .15s;
+  min-height:46px;white-space:nowrap;border:none;
+}
+.btn:hover{transform:translateY(-2px);}
+.btn:active{transform:scale(.97);}
+/* primary gold */
+.bk{background:var(--gold);color:#0A0A0A;font-weight:700;}
+.bk:hover{background:var(--gold2);box-shadow:0 8px 32px rgba(201,168,76,.45);}
+/* glass ghost */
+.bo{background:rgba(255,255,255,.07);color:var(--ink);border:1px solid var(--line);}
+.bo:hover{background:rgba(255,255,255,.12);box-shadow:0 4px 20px rgba(0,0,0,.3);}
+/* dark ghost */
+.bd{background:rgba(255,255,255,.05);color:var(--ink2);border:1px solid var(--line2);}
+.bd:hover{background:rgba(255,255,255,.09);}
+
+/* ═══════ HERO ══════════════════════════════════════════════ */
+.hero{
+  min-height:100svh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;
+  padding:calc(var(--nav-h) + 60px) var(--g) 80px;
+  background:#000;position:relative;overflow:hidden;
+}
+#hero-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;}
+/* radial fade — text readable */
+.hero::after{
+  content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(ellipse 70% 60% at 50% 55%,rgba(0,0,0,.62) 0%,transparent 100%);
+}
+.hcon{position:relative;z-index:2;max-width:760px;}
+
+/* framer-style badge */
+.hbadge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.25);
+  border-radius:var(--rp);padding:6px 14px 6px 10px;
+  font-size:11px;font-weight:600;color:var(--gold);letter-spacing:.04em;
+  margin-bottom:28px;
+  opacity:0;animation:fup .6s var(--e1) .2s both;
+}
+.hbadge-dot{
+  position:relative;width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0;
+}
+.hbadge-dot::after{
+  content:'';position:absolute;inset:-3px;border-radius:50%;
+  border:1px solid var(--gold);animation:pulse-ring 1.8s ease-out infinite;
+}
+
+/* headline */
+.hh1{
+  font-size:clamp(44px,6.5vw,86px);font-weight:900;
+  line-height:.95;letter-spacing:-.04em;color:var(--ink);
+  margin-bottom:24px;
+}
+.hh1 .ln{display:block;overflow:hidden;}
+.hh1 .ln span{display:block;transform:translateY(110%);animation:lup .95s var(--e1) both;will-change:transform;}
+.hh1 .ln:nth-child(1) span{animation-delay:.28s;}
+.hh1 .ln:nth-child(2) span{animation-delay:.42s;}
+.hh1 .ln:nth-child(3) span{animation-delay:.54s;}
+.hh1 em{
+  font-style:italic;
+  background:linear-gradient(135deg,var(--gold2) 0%,var(--gold) 45%,#b8862a 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+
+.hsub{
+  font-size:clamp(15px,1.5vw,18px);color:var(--ink2);line-height:1.75;
+  max-width:520px;margin:0 auto 36px;
+  opacity:0;animation:fup .6s var(--e1) .9s both;
+}
+.hctas{
+  display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:52px;
+  opacity:0;animation:fup .6s var(--e1) 1.05s both;
+}
+
+/* trust row */
+.htrust{
+  display:flex;gap:32px;justify-content:center;flex-wrap:wrap;
+  opacity:0;animation:fup .55s var(--e1) 1.2s both;
+}
+.ht-item{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink3);}
+.ht-dot{width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.8;}
+.ht-item strong{color:#fff;font-weight:700;}
+
+/* scroll hint */
+.hscroll{
+  position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink4);
+  opacity:0;animation:fup .5s var(--e1) 1.5s both;
+}
+.hscroll-arrow{width:1px;height:24px;background:linear-gradient(to bottom,transparent,var(--gold));animation:float-y 2s ease-in-out infinite;}
+
+/* ═══════ MARQUEE ═══════════════════════════════════════════ */
+.mq{overflow:hidden;border-top:1px solid var(--line2);border-bottom:1px solid var(--line2);padding:14px 0;background:rgba(255,255,255,.015);}
+.mqt{display:flex;width:max-content;animation:mqs 30s linear infinite;}
+.mqt:hover{animation-play-state:paused;}
+.mqi{display:flex;align-items:center;gap:24px;padding:0 24px;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);white-space:nowrap;}
+.mqi b{color:var(--gold);font-weight:600;}
+.mqi::after{content:'·';color:var(--ink4);opacity:.4;}
+
+/* ═══════ SCROLL REVEALS ════════════════════════════════════ */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .65s var(--e1),transform .65s var(--e1);}
+.rv.on{opacity:1;transform:translateY(0);}
+.rv-d1{transition-delay:.08s;}.rv-d2{transition-delay:.16s;}.rv-d3{transition-delay:.22s;}
+.rv-d4{transition-delay:.3s;}.rv-d5{transition-delay:.38s;}
+
+/* ═══════ SECTIONS ══════════════════════════════════════════ */
+.sec{padding:clamp(80px,10vw,140px) var(--g);position:relative;}
+.ctr{max-width:var(--mx);margin:0 auto;}
+
+/* framer section label */
+.slbl{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+  background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);
+  border-radius:var(--rp);padding:5px 12px;margin-bottom:20px;
+}
+
+.sh2{
+  font-size:clamp(30px,3.8vw,56px);font-weight:800;
+  line-height:1.05;letter-spacing:-.03em;color:var(--ink);
+}
+.sh2 em{
+  font-style:italic;
+  background:linear-gradient(135deg,var(--gold2) 0%,var(--gold) 55%,#b8862a 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.stext{font-size:clamp(14px,1.1vw,16px);color:var(--ink2);line-height:1.8;max-width:480px;margin-top:16px;}
+
+/* framer divider */
+.hdiv{
+  display:flex;align-items:center;gap:12px;margin:24px 0;
+}
+.hdiv::before,.hdiv::after{content:'';flex:1;height:1px;background:var(--line2);}
+.hdiv span{width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.5;}
+
+/* ═══════ LIGHT SECTION THEME ════════════════════════════════ */
+.sec-light{
+  background:#F7F5F0;
+  color:#1A1814;
+}
+.sec-light .sh2{color:#1A1814;}
+.sec-light .stext,.sec-light .wbody,.sec-light .wpull{color:#4A4640;}
+.sec-light .slbl{background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.35);color:#8A6820;}
+.sec-light .glass-card{background:#fff;border-color:rgba(0,0,0,.08);box-shadow:0 2px 16px rgba(0,0,0,.06);}
+.sec-light .glass-card:hover{border-color:rgba(201,168,76,.4);box-shadow:0 0 0 1px rgba(201,168,76,.15),0 8px 32px rgba(0,0,0,.1);}
+.sec-light .crpan-title{color:#6A6460;border-bottom-color:rgba(0,0,0,.08);}
+.sec-light .crd p,.sec-light .fbdt{color:#5A5650;}
+.sec-light .hdiv::before,.sec-light .hdiv::after{background:rgba(0,0,0,.1);}
+
+/* ═══════ WHY 5 ══════════════════════════════════════════════ */
+.wsec{background:#F7F5F0;color:#1A1814;}
+.wsec .sh2{color:#1A1814;}
+.wsec .stext{color:#4A4640;}
+.wsec .slbl{background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.35);color:#7A5C18;}
+.wsec .glass-card{background:#fff;border-color:rgba(0,0,0,.09);box-shadow:0 2px 16px rgba(0,0,0,.06);}
+.wsec .glass-card:hover{border-color:rgba(201,168,76,.4);box-shadow:0 0 0 1px rgba(201,168,76,.15),0 8px 32px rgba(0,0,0,.1);}
+.wsec .crpan-title{color:#6A6460;border-bottom-color:rgba(0,0,0,.08);}
+.wsec .crd h4{color:#1A1814;}
+.wsec .crd p{color:#5A5650;}
+.wsec .hdiv::before,.wsec .hdiv::after{background:rgba(0,0,0,.1);}
+.wsec-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:start;}
+
+.wbody{font-size:14px;color:#4A4640;line-height:1.85;margin-bottom:16px;}
+.wpull{
+  font-size:clamp(15px,1.4vw,18px);font-style:italic;color:#4A4640;line-height:1.65;
+  padding:20px 0 20px 20px;
+  border-left:2px solid var(--gold);
+  background:linear-gradient(90deg,rgba(201,168,76,.08),transparent);
+  border-radius:0 12px 12px 0;
+}
+
+/* framer glass card */
+.glass-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--r);
+  padding:28px;
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  transition:border-color .25s,box-shadow .25s;
+}
+.glass-card:hover{border-color:rgba(201,168,76,.2);box-shadow:0 0 0 1px rgba(201,168,76,.08),0 20px 48px rgba(0,0,0,.4);}
+
+.crpan-title{font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink3);margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--line2);}
+.crlist{list-style:none;display:flex;flex-direction:column;gap:4px;}
+.cri{
+  display:flex;gap:14px;align-items:flex-start;
+  padding:12px;border-radius:10px;border:1px solid transparent;
+  transition:background .15s,border-color .15s;
+}
+.cri:hover{background:rgba(255,255,255,.03);border-color:var(--line2);}
+.crn{
+  font-size:9px;font-weight:700;letter-spacing:.08em;color:var(--gold);
+  background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);
+  border-radius:6px;padding:3px 7px;flex-shrink:0;margin-top:1px;
+}
+.crd h4{font-size:12px;font-weight:600;color:var(--ink);margin-bottom:3px;}
+.crd p{font-size:12px;color:var(--ink3);line-height:1.6;}
+
+/* ═══════ CATEGORIES ════════════════════════════════════════ */
+.csec{background:var(--bg);}
+.cintro{text-align:center;max-width:540px;margin:0 auto clamp(56px,7vw,96px);}
+.cintro .slbl{margin:0 auto 20px;}
+
+.cblk{padding:clamp(48px,5.5vw,72px) 0;border-top:1px solid var(--line2);}
+.cin{max-width:var(--mx);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,80px);align-items:center;padding:0 var(--g);}
+.cblk:nth-child(even) .cin{direction:rtl;}
+.cblk:nth-child(even) .cin>*{direction:ltr;}
+
+/* framer feature card (coin) */
+.ccwrap{display:flex;align-items:center;justify-content:center;}
+.ccoin-frame{
+  width:clamp(200px,26vw,340px);aspect-ratio:1;
+  border-radius:24px;
+  position:relative;overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--bg3);
+  display:flex;align-items:center;justify-content:center;
+  transition:border-color .3s,box-shadow .3s,transform .4s var(--e1);
+  cursor:pointer;
+}
+.ccoin-frame:hover{
+  border-color:rgba(201,168,76,.35);
+  box-shadow:0 0 0 1px rgba(201,168,76,.12),0 24px 64px rgba(0,0,0,.5),0 0 60px rgba(201,168,76,.08);
+  transform:translateY(-6px);
+}
+.ccoin-bg{position:absolute;inset:0;border-radius:24px;}
+.ccoin-num{
+  position:absolute;top:16px;left:18px;
+  font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--ink4);
+  background:rgba(255,255,255,.05);border:1px solid var(--line2);
+  border-radius:var(--rp);padding:3px 9px;
+}
+.ccoin-coin{
+  width:clamp(120px,16vw,200px);aspect-ratio:1;border-radius:50%;
+  position:relative;z-index:1;
+  transform-style:preserve-3d;
+  transition:transform .4s var(--e1);
+}
+.ccoin-frame:hover .ccoin-coin{transform:rotateX(12deg) rotateY(-8deg) scale(1.06);}
+.ccs{position:absolute;top:9%;left:13%;width:36%;height:36%;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.12) 0%,transparent 70%);pointer-events:none;z-index:2;}
+.cc1{background:radial-gradient(circle at 32% 28%,#D4892A 0%,#A06020 22%,#6B3E0A 50%,#3D2005 75%,#1A0C02 100%);box-shadow:0 16px 48px rgba(160,80,20,.3);}
+.cc2{background:radial-gradient(circle at 32% 28%,#DDDAD0 0%,#B0AAA0 22%,#7A7470 50%,#484440 75%,#282624 100%);box-shadow:0 16px 48px rgba(100,100,120,.2);}
+.cc3{background:radial-gradient(circle at 32% 28%,#D4BE90 0%,#A89060 22%,#7A6030 50%,#4A3410 75%,#221808 100%);box-shadow:0 16px 48px rgba(140,110,60,.2);}
+.cc4{background:radial-gradient(circle at 32% 28%,#EAC820 0%,#C0980A 22%,#886500 50%,#503800 75%,#281A00 100%);box-shadow:0 16px 48px rgba(200,150,0,.25);}
+.cc5{background:radial-gradient(circle at 32% 28%,#A89880 0%,#806848 22%,#503820 50%,#2C1808 75%,#120A04 100%);box-shadow:0 16px 48px rgba(100,80,55,.2);}
+/* glow bg tint per coin */
+.cc1-bg{background:radial-gradient(circle at 40% 40%,rgba(180,100,30,.12) 0%,transparent 70%);}
+.cc2-bg{background:radial-gradient(circle at 40% 40%,rgba(160,160,180,.08) 0%,transparent 70%);}
+.cc3-bg{background:radial-gradient(circle at 40% 40%,rgba(180,150,90,.1) 0%,transparent 70%);}
+.cc4-bg{background:radial-gradient(circle at 40% 40%,rgba(210,170,20,.1) 0%,transparent 70%);}
+.cc5-bg{background:radial-gradient(circle at 40% 40%,rgba(130,100,70,.1) 0%,transparent 70%);}
+
+/* category text */
+.ctags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.tg{font-size:10px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:var(--rp);}
+.tgp{background:rgba(201,168,76,.1);color:var(--gold);border:1px solid rgba(201,168,76,.2);}
+.tga{background:rgba(255,255,255,.05);color:var(--ink3);border:1px solid var(--line2);}
+
+.cnum{display:block;font-size:clamp(72px,8vw,108px);font-weight:900;line-height:1;letter-spacing:-.05em;color:rgba(255,255,255,.22);margin-bottom:-10px;user-select:none;}
+.ch3{font-size:clamp(22px,2.4vw,34px);font-weight:800;line-height:1.1;letter-spacing:-.03em;color:var(--ink);margin-bottom:14px;}
+.cwhy{font-size:14px;color:var(--ink2);line-height:1.85;margin-bottom:20px;}
+.cfigs{margin-bottom:18px;}
+.cfl{font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px;}
+.cfp{display:flex;flex-wrap:wrap;gap:6px;}
+.fp{font-size:11px;color:var(--ink2);background:rgba(255,255,255,.05);border:1px solid var(--line2);padding:3px 10px;border-radius:var(--rp);}
+.cst{
+  font-size:13px;color:var(--ink2);line-height:1.72;margin-bottom:26px;
+  padding:14px 16px;
+  background:rgba(201,168,76,.04);border-left:2px solid rgba(201,168,76,.3);
+  border-radius:0 8px 8px 0;
+}
+
+/* ═══════ STARTER — FRAMER 3-CARD GRID ══════════════════════ */
+.ssec{background:var(--bg2);position:relative;overflow:hidden;}
+/* mesh gradient bg */
+.ssec::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.06) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+.shead{text-align:center;margin-bottom:clamp(40px,5vw,60px);position:relative;z-index:1;}
+
+.sgrid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  margin-bottom:44px;position:relative;z-index:1;
+}
+.scard{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:28px;cursor:pointer;position:relative;overflow:hidden;
+  transition:border-color .25s,box-shadow .3s,transform .3s var(--e1);
+}
+.scard::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  transform:scaleX(0);transform-origin:left;transition:transform .4s var(--e2);
+}
+.scard:hover::before{transform:scaleX(1);}
+.scard:hover{transform:translateY(-6px);border-color:rgba(201,168,76,.3);box-shadow:0 0 0 1px rgba(201,168,76,.06),0 24px 60px rgba(0,0,0,.4);}
+.scard.ft{border-color:rgba(201,168,76,.3);background:rgba(201,168,76,.05);}
+.scard.ft::before{transform:scaleX(1);}
+.sbdg{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+.scard h3{font-size:20px;font-weight:800;letter-spacing:-.02em;color:var(--ink);margin-bottom:8px;line-height:1.2;}
+.sfor{font-size:13px;color:var(--ink2);line-height:1.6;margin-bottom:18px;}
+.sprc{font-size:28px;font-weight:800;letter-spacing:-.03em;color:var(--ink);margin-bottom:24px;}
+.sprc span{font-size:12px;font-weight:400;color:var(--ink4);}
+.scard .btn{width:100%;justify-content:center;}
+.snote{
+  text-align:center;font-size:clamp(14px,1.4vw,17px);font-style:italic;
+  color:var(--ink3);max-width:480px;margin:0 auto;line-height:1.7;position:relative;z-index:1;
+}
+
+/* ═══════ REVIEWS ════════════════════════════════════════════ */
+.rsec{background:#F7F5F0;color:#1A1814;}
+.rsec .sh2{color:#1A1814;}
+.rsec .stext{color:#4A4640;}
+.rsec .slbl{background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.35);color:#7A5C18;}
+.rsec .rcard{background:#fff;border-color:rgba(0,0,0,.09);box-shadow:0 2px 12px rgba(0,0,0,.06);}
+.rsec .rcard:hover{border-color:rgba(201,168,76,.4);box-shadow:0 8px 32px rgba(0,0,0,.1);}
+.rsec .rtext{color:#3A3630;}
+.rsec .raname{color:#1A1814;}
+.rsec .raloc{color:#7A7670;}
+.rsec .rav{background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.3);}
+.rsec .rtrust{background:#fff;border-color:rgba(0,0,0,.09);}
+.rsec .rts{border-right-color:rgba(0,0,0,.07);}
+.rsec .rts:hover{background:rgba(0,0,0,.02);}
+.rsec .rts span{color:#7A7670;}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:48px;}
+.rcard{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:28px;cursor:pointer;
+  transition:border-color .25s,transform .3s var(--e1),box-shadow .3s;
+}
+.rcard:hover{border-color:rgba(201,168,76,.25);transform:translateY(-4px);box-shadow:0 20px 50px rgba(0,0,0,.4);}
+.rstars{display:flex;gap:3px;margin-bottom:16px;}
+.rstar{width:12px;height:12px;background:var(--gold);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);}
+.rtext{font-size:14px;font-style:italic;color:var(--ink2);line-height:1.78;margin-bottom:22px;}
+.rauth{display:flex;align-items:center;gap:10px;}
+.rav{width:34px;height:34px;border-radius:50%;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--gold);}
+.raname{font-size:13px;font-weight:600;color:var(--ink);}
+.raloc{font-size:11px;color:var(--ink4);}
+
+/* trust stats — framer style */
+.rtrust{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+}
+.rts{
+  text-align:center;padding:32px 20px;
+  border-right:1px solid var(--line2);
+  transition:background .2s;
+}
+.rts:last-child{border-right:none;}
+.rts:hover{background:rgba(255,255,255,.03);}
+.rts strong{display:block;font-size:clamp(32px,4vw,52px);font-weight:900;letter-spacing:-.04em;
+  background:linear-gradient(135deg,var(--gold2) 0%,var(--gold) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.rts span{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink4);}
+
+/* ═══════ FAQ ════════════════════════════════════════════════ */
+.fsec{background:var(--bg2);}
+.faq{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:4px;}
+.fi{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  overflow:hidden;transition:border-color .2s,background .2s;
+}
+.fi.op{border-color:rgba(201,168,76,.2);background:rgba(201,168,76,.03);}
+.fq{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;background:none;border:none;cursor:pointer;padding:18px 20px;text-align:left;}
+.fqt{font-size:clamp(14px,1.3vw,16px);font-weight:600;color:var(--ink);flex:1;line-height:1.35;}
+.fic{
+  width:26px;height:26px;border-radius:8px;
+  background:rgba(255,255,255,.06);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;position:relative;
+  transition:background .2s,border-color .2s,transform .28s var(--e1);
+}
+.fic::before,.fic::after{content:'';position:absolute;background:var(--ink3);border-radius:1px;transition:transform .28s var(--e1),opacity .2s;}
+.fic::before{width:10px;height:1.5px;}
+.fic::after{width:1.5px;height:10px;}
+.fi.op .fic{background:var(--gold);border-color:var(--gold);transform:rotate(45deg);}
+.fi.op .fic::before,.fi.op .fic::after{background:#0A0A0A;}
+.fbd{max-height:0;overflow:hidden;transition:max-height .4s var(--e1),padding .3s;}
+.fi.op .fbd{max-height:360px;}
+.fbdt{font-size:13px;color:var(--ink2);line-height:1.82;padding:0 20px 18px;}
+
+/* ═══════ FINAL CTA — FRAMER CARD ═══════════════════════════ */
+.fcta{
+  background:var(--bg3);padding:clamp(80px,10vw,130px) var(--g);
+  position:relative;overflow:hidden;
+}
+.fcta::before{content:'';position:absolute;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.07) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+.fcta-card{
+  max-width:620px;margin:0 auto;text-align:center;
+  background:rgba(255,255,255,.03);border:1px solid var(--line);
+  border-radius:24px;padding:clamp(44px,6vw,72px);
+  position:relative;overflow:hidden;
+  backdrop-filter:blur(12px);
+}
+.fcta-card::before{
+  content:'';position:absolute;inset:0;border-radius:24px;
+  background:linear-gradient(135deg,rgba(201,168,76,.06) 0%,transparent 50%);
+  pointer-events:none;
+}
+.fcta-card>*{position:relative;z-index:1;}
+.fcta .slbl{margin:0 auto 22px;}
+.fcta .sh2{color:var(--ink);margin-bottom:14px;}
+.fcta .stext{color:var(--ink3);margin:0 auto 36px;}
+.fcta-btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+
+/* ═══════ FOOTER ════════════════════════════════════════════ */
+.foot{background:#060606;border-top:1px solid var(--line2);color:var(--ink3);padding:clamp(48px,6vw,80px) var(--g) clamp(24px,3vw,36px);}
+.ftop{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:clamp(24px,4vw,60px);margin-bottom:clamp(36px,5vw,52px);}
+.flogo{height:28px;width:auto;margin-bottom:12px;opacity:.5;transition:opacity .15s;display:block;}
+.flogo:hover{opacity:.85;}
+.fbrand p{font-size:12px;line-height:1.75;color:rgba(255,255,255,.25);max-width:180px;}
+.fh{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.2);margin-bottom:12px;}
+.fcol ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.fcol ul a{font-size:13px;color:rgba(255,255,255,.3);transition:color .15s;}
+.fcol ul a:hover{color:var(--gold);}
+.fbot{border-top:1px solid rgba(255,255,255,.05);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.fcopy{font-size:11px;color:rgba(255,255,255,.18);}
+.fcopy a{color:rgba(255,255,255,.25);transition:color .15s;}
+.fcopy a:hover{color:var(--gold);}
+.ftrust{display:flex;gap:16px;}
+.ftrust span{font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.15);}
+
+/* ═══════ RESPONSIVE ════════════════════════════════════════ */
+@media(max-width:1023px){.wsec-grid{grid-template-columns:1fr;}.ftop{grid-template-columns:1fr 1fr;}.rtrust{grid-template-columns:1fr 1fr;}}
+@media(max-width:767px){
+  .nav-links,.nbtn{display:none;}.hbg{display:flex;}
+  .hcon{max-width:100%;}
+  .cin{grid-template-columns:1fr;}
+  .cblk:nth-child(even) .cin{direction:ltr;}
+  .ccwrap{order:-1;}
+  .sgrid{grid-template-columns:1fr;}
+  .rgrid{grid-template-columns:1fr;}
+  .rtrust{grid-template-columns:1fr 1fr;}
+  .ftop{grid-template-columns:1fr;}
+  .fbot{flex-direction:column;text-align:center;}
+  .nav-wrap{width:calc(100% - 24px);}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important;}}
+</style>
+</head>
+<body>
+
+<!-- PILL NAV -->
+<div class="nav-wrap">
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="#top" aria-label="Kinzer Coins home">
+      <img src="logo.png" alt="Kinzer Coins" class="nav-logo"/>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#why">Why 5</a></li>
+      <li><a href="#cats">Categories</a></li>
+      <li><a href="#start">Get Started</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="nbtn">Start Collecting</a>
+    <button class="hbg" id="hmb" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</div>
+
+<!-- MOBILE NAV -->
+<nav class="mob-nav" id="mob-nav" aria-label="Mobile navigation">
+  <a href="#why">Why 5 Coins?</a>
+  <a href="#cats">5 Categories</a>
+  <a href="#start">Get Started</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#faq">FAQ</a>
+  <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="nbtn">Start Collecting</a>
+</nav>
+
+<!-- HERO — centered framer layout -->
+<section class="hero" id="top" aria-labelledby="hero-heading">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+  <div class="hcon">
+    <div class="hbadge">
+      <div class="hbadge-dot"></div>
+      Ancient Coins for Modern Collectors
+    </div>
+
+    <h1 class="hh1" id="hero-heading">
+      <span class="ln"><span>Own a Piece of</span></span>
+      <span class="ln"><span><em>Ancient History</em></span></span>
+    </h1>
+
+    <p class="hsub">Authentic coins from Rome, Greece, and Byzantium — $15 to $150. Start building a collection that outlasts you.</p>
+
+    <div class="hctas">
+      <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bk">See the 5 Categories →</a>
+      <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bo">Why Ancient Coins?</a>
+    </div>
+
+    <div class="htrust">
+      <div class="ht-item"><div class="ht-dot"></div><strong>2,400+</strong>&nbsp;collectors worldwide</div>
+      <div class="ht-item"><div class="ht-dot"></div><strong>100%</strong>&nbsp;authenticated</div>
+      <div class="ht-item"><div class="ht-dot"></div><strong>From $15</strong>&nbsp;per coin</div>
+      <div class="ht-item"><div class="ht-dot"></div><strong>Est. 2022</strong></div>
+    </div>
+  </div>
+
+  <div class="hscroll" aria-hidden="true">
+    <div class="hscroll-arrow"></div>
+    scroll
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mq" aria-hidden="true">
+  <div class="mqt">
+    <div class="mqi"><b>Roman Imperial</b><span>70 BC – 395 AD</span></div>
+    <div class="mqi"><b>Greek City Coins</b><span>500 – 100 BC</span></div>
+    <div class="mqi"><b>Byzantine Gold</b><span>330 – 1453 AD</span></div>
+    <div class="mqi"><b>Provincial Bronze</b><span>30 BC – 300 AD</span></div>
+    <div class="mqi"><b>Ancient Silver</b><span>500 – 50 BC</span></div>
+    <div class="mqi"><b>Kinzer Coins</b><span>Est. 2022</span></div>
+    <div class="mqi"><b>Roman Imperial</b><span>70 BC – 395 AD</span></div>
+    <div class="mqi"><b>Greek City Coins</b><span>500 – 100 BC</span></div>
+    <div class="mqi"><b>Byzantine Gold</b><span>330 – 1453 AD</span></div>
+    <div class="mqi"><b>Provincial Bronze</b><span>30 BC – 300 AD</span></div>
+    <div class="mqi"><b>Ancient Silver</b><span>500 – 50 BC</span></div>
+    <div class="mqi"><b>Kinzer Coins</b><span>Est. 2022</span></div>
+  </div>
+</div>
+
+<!-- WHY 5 -->
+<section class="sec wsec" id="why" aria-labelledby="why-heading">
+  <div class="ctr">
+    <div class="wsec-grid">
+      <div class="rv">
+        <div class="slbl">The Case for Five</div>
+        <h2 class="sh2" id="why-heading">Why these <em>five</em> categories?</h2>
+        <div class="hdiv"><span></span></div>
+        <p class="wbody">Not all ancient coins are created equal. After years of sourcing coins and helping thousands of first-time collectors, we've identified five categories that hit the perfect intersection of affordability, authenticity, and historical impact.</p>
+        <p class="wbody">These aren't random picks. Each category was chosen because it lets a beginner spend $15–$150 and walk away with something genuinely 1,500–2,500 years old, legally owned, and worth showing off.</p>
+        <blockquote class="wpull">"Every coin in these categories carries the actual touch of ancient hands — not a reproduction, not a cast. The real thing."</blockquote>
+        <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bk rv rv-d1" style="margin-top:28px;">Explore All 5 Categories →</a>
+      </div>
+      <div class="glass-card rv rv-d2">
+        <div class="crpan-title">The Five Categories</div>
+        <ul class="crlist">
+          <li class="cri"><span class="crn">01</span><div class="crd"><h4>Roman Imperial Bronze</h4><p>Affordable, abundant, and connected to emperors you recognize.</p></div></li>
+          <li class="cri"><span class="crn">02</span><div class="crd"><h4>Roman Silver Denarii</h4><p>Portraits of Caesar, Augustus, Nero — the dollar bill of Rome.</p></div></li>
+          <li class="cri"><span class="crn">03</span><div class="crd"><h4>Ancient Greek Bronze</h4><p>Owls, gods, city symbols — each coin tells a vanished story.</p></div></li>
+          <li class="cri"><span class="crn">04</span><div class="crd"><h4>Byzantine Gold Fractions</h4><p>The most beautiful coins ever minted. Tiny real gold tremisses.</p></div></li>
+          <li class="cri"><span class="crn">05</span><div class="crd"><h4>Provincial Roman Bronze</h4><p>Local Roman rule — exotic cities, foreign gods, surprising designs.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="sec csec" id="cats" aria-labelledby="cats-heading">
+  <div class="ctr">
+    <div class="cintro rv">
+      <div class="slbl">The Collection</div>
+      <h2 class="sh2" id="cats-heading">Five coins. <em>Five civilizations.</em></h2>
+      <p class="stext" style="text-align:center;margin:14px auto 0;">Full details on what each coin is, what it costs, and why it belongs in your first collection.</p>
+    </div>
+
+    <div class="cblk"><div class="cin">
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc1-bg"></div><div class="ccoin-num">01</div><div class="ccoin-coin cc1"><div class="ccs"></div></div></div></div>
+      <div class="rv rv-d1"><span class="cnum">01</span><div class="ctags"><span class="tg tgp">Most Popular</span><span class="tg tga">Rome · Bronze</span></div><h3 class="ch3">Roman Imperial Bronze</h3><p class="cwhy">These are the coins that paid legionaries, bought bread in Roman markets, and changed hands a thousand times before ending up in your collection. The most accessible ancient coins in the world — connected to emperors you already know.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$15–$45 circulated</span><span class="fp">$50–$150 fine</span><span class="fp">$150+ exceptional</span></div></div><blockquote class="cst">"A Fine Constantinian bronze can be had for under $40. That's 1,700 years old with a real emperor's face — for less than dinner."</blockquote><a href="https://kinzercoins.com/collections/roman-empire" target="_blank" rel="noopener" class="btn bk">Start with Roman Bronze →</a></div>
+    </div></div>
+
+    <div class="cblk"><div class="cin">
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc2-bg"></div><div class="ccoin-num">02</div><div class="ccoin-coin cc2"><div class="ccs"></div></div></div></div>
+      <div class="rv rv-d1"><span class="cnum">02</span><div class="ctags"><span class="tg tgp">Best Value</span><span class="tg tga">Rome · Silver</span></div><h3 class="ch3">Roman Silver Denarii</h3><p class="cwhy">The backbone of the Roman economy for 400 years. Julius Caesar paid his soldiers in denarii. For $50–$100, you can own a silver coin bearing the portrait of an emperor you've heard of.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$30–$60 worn</span><span class="fp">$60–$120 VF</span><span class="fp">$150+ choice</span></div></div><blockquote class="cst">"A denarius of Trajan in VF runs about $65–90. That coin was minted while the Pantheon was being built."</blockquote><a href="https://kinzercoins.com/collections/roman-empire" target="_blank" rel="noopener" class="btn bk">Start with Silver Denarii →</a></div>
+    </div></div>
+
+    <div class="cblk"><div class="cin">
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc3-bg"></div><div class="ccoin-num">03</div><div class="ccoin-coin cc3"><div class="ccs"></div></div></div></div>
+      <div class="rv rv-d1"><span class="cnum">03</span><div class="ctags"><span class="tg tgp">Most Artistic</span><span class="tg tga">Greece · Bronze</span></div><h3 class="ch3">Ancient Greek Bronze</h3><p class="cwhy">Before Rome, hundreds of city-states minted coins with astonishing variety. Owls for Athens, a bull for Thurium, a bee for Ephesus. Greek bronze from 300–100 BC are often the most visually striking coins in any collection.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$20–$55 common</span><span class="fp">$55–$130 scarce</span><span class="fp">$150+ rare</span></div></div><blockquote class="cst">"A well-struck bronze from Corinth — 2,300 years old — costs about the same as a nice dinner."</blockquote><a href="https://kinzercoins.com/collections/greek" target="_blank" rel="noopener" class="btn bk">Start with Greek Bronze →</a></div>
+    </div></div>
+
+    <div class="cblk"><div class="cin">
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc4-bg"></div><div class="ccoin-num">04</div><div class="ccoin-coin cc4"><div class="ccs"></div></div></div></div>
+      <div class="rv rv-d1"><span class="cnum">04</span><div class="ctags"><span class="tg tgp">Most Beautiful</span><span class="tg tga">Byzantium · Gold</span></div><h3 class="ch3">Byzantine Gold Fractions</h3><p class="cwhy">The most visually spectacular ancient coins you can buy for under $150. Gold tremisses show Christ, the Virgin Mary, or an emperor in full regalia — with artistry that rivals modern jewelry.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$80–$150 tremissis</span><span class="fp">$150–$400 solidus</span><span class="fp">$400+ rare</span></div></div><blockquote class="cst">"A gold tremissis in Fine — 1,500 years old, actual gold — starts around $95. Nothing competes on beauty per dollar."</blockquote><a href="https://kinzercoins.com/collections/byzantine-empire" target="_blank" rel="noopener" class="btn bk">Start with Byzantine Gold →</a></div>
+    </div></div>
+
+    <div class="cblk"><div class="cin">
+      <div class="ccwrap rv"><div class="ccoin-frame"><div class="ccoin-bg cc5-bg"></div><div class="ccoin-num">05</div><div class="ccoin-coin cc5"><div class="ccs"></div></div></div></div>
+      <div class="rv rv-d1"><span class="cnum">05</span><div class="ctags"><span class="tg tgp">Most Varied</span><span class="tg tga">Rome · Provincial</span></div><h3 class="ch3">Provincial Roman Bronze</h3><p class="cwhy">Minted by local cities under Roman rule. You get local gods, exotic iconography, and city names that read like a tour through the ancient world: Antioch, Alexandria, Caesarea, Ephesus. The most affordable Roman coins with portraits.</p><div class="cfigs"><p class="cfl">Price Range</p><div class="cfp"><span class="fp">$12–$35 common</span><span class="fp">$35–$90 scarce</span><span class="fp">$90+ rare</span></div></div><blockquote class="cst">"A provincial from Antioch — one of the great cities of antiquity — can start as low as $18."</blockquote><a href="https://kinzercoins.com/collections/roman-empire" target="_blank" rel="noopener" class="btn bk">Start with Provincial Bronze →</a></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- STARTER PATH -->
+<section class="sec ssec" id="start" aria-labelledby="start-heading">
+  <div class="ctr">
+    <div class="shead rv">
+      <div class="slbl">Your Path In</div>
+      <h2 class="sh2" id="start-heading">Choose your <em>starting point</em></h2>
+      <p class="stext" style="text-align:center;margin:12px auto 0;max-width:420px;">Three paths based on budget and ambition. Every coin authenticated, documented, ready to ship.</p>
+    </div>
+    <div class="sgrid">
+      <div class="scard rv rv-d1"><div class="sbdg">Budget Start</div><h3>The Taster</h3><p class="sfor">Perfect for first-timers who want to hold history without a big commitment.</p><div class="sprc">$15–$45<span> per coin</span></div><a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bo">Browse Tasters →</a></div>
+      <div class="scard ft rv rv-d2"><div class="sbdg">Most Popular</div><h3>The Collector</h3><p class="sfor">Serious about building a curated collection of display-worthy coins.</p><div class="sprc">$50–$100<span> per coin</span></div><a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bk">Browse Collectors →</a></div>
+      <div class="scard rv rv-d3"><div class="sbdg">Connoisseur</div><h3>The Enthusiast</h3><p class="sfor">Investors and serious collectors wanting exceptional, investment-grade pieces.</p><div class="sprc">$100–$150<span> per coin</span></div><a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bo">Browse Enthusiast →</a></div>
+    </div>
+    <p class="snote rv">"Every coin ships with a Certificate of Authenticity and a reference card explaining exactly who made it and when."</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec rsec" id="reviews" aria-labelledby="reviews-heading">
+  <div class="ctr">
+    <div style="text-align:center;margin-bottom:clamp(40px,5vw,56px);" class="rv">
+      <div class="slbl" style="margin:0 auto 18px;">Collector Stories</div>
+      <h2 class="sh2" id="reviews-heading">What collectors <em>say</em></h2>
+    </div>
+    <div class="rgrid">
+      <div class="rcard rv rv-d1"><div class="rstars"><div class="rstar"></div><div class="rstar"></div><div class="rstar"></div><div class="rstar"></div><div class="rstar"></div></div><p class="rtext">"I bought my first Roman bronze almost as a joke — a $22 coin of Constantine. Now I own 34 coins and I can't stop. Kinzer's descriptions make every coin feel alive."</p><div class="rauth"><div class="rav">M</div><div><div class="raname">Michael T.</div><div class="raloc">Portland, OR · 34 coins</div></div></div></div>
+      <div class="rcard rv rv-d2"><div class="rstars"><div class="rstar"></div><div class="rstar"></div><div class="rstar"></div><div class="rstar"></div><div class="rstar"></div></div><p class="rtext">"The Byzantine gold tremissis arrived better than described. Holding actual gold from 600 AD is a feeling I can't describe. My kids are now obsessed with ancient history."</p><div class="rauth"><div class="rav">S</div><div><div class="raname">Sarah K.</div><div class="raloc">Austin, TX · 12 coins</div></div></div></div>
+      <div class="rcard rv rv-d3"><div class="rstars"><div class="rstar"></div><div class="rstar"></div><div class="rstar"></div><div class="rstar"></div><div class="rstar"></div></div><p class="rtext">"I've been collecting for 20 years. Kinzer has the best under-$100 selection I've found. Accurately graded, great provenance info — exactly what a serious collector needs."</p><div class="rauth"><div class="rav">D</div><div><div class="raname">David R.</div><div class="raloc">Boston, MA · 200+ coins</div></div></div></div>
+    </div>
+    <div class="rtrust rv">
+      <div class="rts"><strong>2,400+</strong><span>Collectors</span></div>
+      <div class="rts"><strong>4.97</strong><span>Avg Rating</span></div>
+      <div class="rts"><strong>100%</strong><span>Authenticated</span></div>
+      <div class="rts"><strong>$15</strong><span>Starting Price</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec fsec" id="faq" aria-labelledby="faq-heading">
+  <div class="ctr">
+    <div style="text-align:center;margin-bottom:clamp(40px,5vw,56px);" class="rv">
+      <div class="slbl" style="margin:0 auto 18px;">Common Questions</div>
+      <h2 class="sh2" id="faq-heading">Everything you need <em>to know</em></h2>
+    </div>
+    <div class="faq">
+      <div class="fi rv"><button class="fq" aria-expanded="false"><span class="fqt">Are these coins actually authentic?</span><span class="fic" aria-hidden="true"></span></button><div class="fbd" role="region"><p class="fbdt">Yes — every coin sold through Kinzer Coins is a genuine ancient artifact, not a reproduction or cast. Each coin is examined by an expert numismatist before listing and comes with a Certificate of Authenticity.</p></div></div>
+      <div class="fi rv"><button class="fq" aria-expanded="false"><span class="fqt">Is it legal to own ancient coins in the US?</span><span class="fic" aria-hidden="true"></span></button><div class="fbd" role="region"><p class="fbdt">Yes, with one condition: the coin must have been legally exported before any applicable laws took effect. All coins on Kinzer Coins meet this standard. We follow ACCG guidelines and provide provenance documentation with every purchase.</p></div></div>
+      <div class="fi rv"><button class="fq" aria-expanded="false"><span class="fqt">What do I need to start collecting?</span><span class="fic" aria-hidden="true"></span></button><div class="fbd" role="region"><p class="fbdt">Just curiosity and $15–$50 to start. Every coin arrives with an educational card explaining what it is, who minted it, and what was happening in history at the time.</p></div></div>
+      <div class="fi rv"><button class="fq" aria-expanded="false"><span class="fqt">How do ancient coins hold their value?</span><span class="fic" aria-hidden="true"></span></button><div class="fbd" role="region"><p class="fbdt">Ancient coins have a 500-year track record as a store of value. Supply is genuinely fixed — no more Roman emperors will be minting coins. Museum-quality pieces consistently appreciate over time.</p></div></div>
+      <div class="fi rv"><button class="fq" aria-expanded="false"><span class="fqt">What's the best first coin to buy?</span><span class="fic" aria-hidden="true"></span></button><div class="fbd" role="region"><p class="fbdt">A Constantinian bronze in Fine condition for $25–$40. You get a recognizable emperor, clear legends, visible detail, and immediate historical connection — affordable enough to buy without stress.</p></div></div>
+      <div class="fi rv"><button class="fq" aria-expanded="false"><span class="fqt">Do you ship internationally?</span><span class="fic" aria-hidden="true"></span></button><div class="fbd" role="region"><p class="fbdt">Yes. Kinzer Coins ships worldwide with full insurance and tracking. International shipping is $12–$28. All customs documentation is handled correctly. Delivery typically 5–14 business days.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="fcta" aria-labelledby="cta-heading">
+  <div class="ctr">
+    <div class="fcta-card rv">
+      <div class="slbl" style="margin:0 auto 22px;">Start Your Collection</div>
+      <h2 class="sh2" id="cta-heading">Your first ancient coin<br>is waiting.</h2>
+      <p class="stext" style="text-align:center;margin:14px auto 36px;max-width:380px;">2,500 years of history. Starting at $15. Every coin authenticated, documented, ready to ship.</p>
+      <div class="fcta-btns">
+        <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bk">Shop Kinzer Coins →</a>
+        <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bo">Browse Categories</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot" role="contentinfo">
+  <div class="ctr">
+    <div class="ftop">
+      <div class="fbrand">
+        <a href="#top"><img src="logo.png" alt="Kinzer Coins" class="flogo"/></a>
+        <p>Ancient coins for modern collectors. Authentic. Affordable. Meaningful.</p>
+      </div>
+      <div class="fcol"><div class="fh">Collect</div><ul><li><a href="#cats">5 Categories</a></li><li><a href="#start">Starter Path</a></li><li><a href="https://kinzercoins.com" target="_blank" rel="noopener">Full Shop</a></li></ul></div>
+      <div class="fcol"><div class="fh">Learn</div><ul><li><a href="#why">Why 5 Coins?</a></li><li><a href="#faq">FAQ</a></li><li><a href="#reviews">Reviews</a></li></ul></div>
+      <div class="fcol"><div class="fh">Contact</div><ul><li><a href="https://kinzercoins.com" target="_blank" rel="noopener">kinzercoins.com</a></li></ul></div>
+    </div>
+    <div class="fbot">
+      <p class="fcopy">&copy; 2024 <a href="https://kinzercoins.com" target="_blank" rel="noopener">Kinzer Coins</a>. All rights reserved.</p>
+      <div class="ftrust"><span>Est. 2022</span><span>Authenticated</span><span>Worldwide Shipping</span></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+
+/* ── HERO DUST & SMOKE ──────────────────────────────────────── */
+(function(){
+  const canvas = document.getElementById('hero-canvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H;
+
+  function resize(){
+    const hero = canvas.parentElement;
+    W = canvas.width  = hero.offsetWidth;
+    H = canvas.height = hero.offsetHeight;
+  }
+
+  /* ── Particle pool ── */
+  const POOL = 300;
+  const particles = [];
+
+  /* colour palette: warm gold / amber / ashy white */
+  const PALETTES = [
+    [212,168,76],   // gold
+    [240,201,106],  // bright gold
+    [184,137,42],   // dark amber
+    [201,156,90],   // bronze
+    [220,200,160],  // ash / dusty white
+    [170,130,60],   // deep amber
+  ];
+
+  function rand(a,b){return a+(b-a)*Math.random();}
+  function choose(arr){return arr[Math.floor(Math.random()*arr.length)];}
+
+  function spawnParticle(p, initial){
+    const col = choose(PALETTES);
+    p.x    = rand(0, W);
+    p.y    = initial ? rand(0, H) : rand(H*0.4, H+60);
+    p.r    = rand(30, 130);          // radius (smoke puff size)
+    p.vx   = rand(-0.18, 0.18);      // slow lateral drift
+    p.vy   = rand(-0.55, -0.12);     // rise upward
+    p.life = 0;
+    p.maxLife = rand(180, 380);
+    p.cr   = col[0]; p.cg = col[1]; p.cb = col[2];
+    p.spin = rand(-0.004, 0.004);    // slow rotation of gradient
+    p.angle= rand(0, Math.PI*2);
+    p.grow = rand(0.04, 0.18);       // radius growth per frame
+    p.type = Math.random() < 0.65 ? 'smoke' : 'dust'; // dust = tiny bright specks
+    if(p.type === 'dust'){
+      p.r   = rand(1, 3.5);
+      p.vy  = rand(-0.8, -0.2);
+      p.vx  = rand(-0.35, 0.35);
+      p.maxLife = rand(100, 220);
+      p.grow = 0;
+    }
+  }
+
+  function easeInOut(t){ return t<.5 ? 2*t*t : -1+(4-2*t)*t; }
+
+  function drawSmoke(p){
+    const prog  = p.life / p.maxLife;
+    const fade  = prog < 0.15 ? prog/0.15 : prog > 0.75 ? 1-(prog-0.75)/0.25 : 1;
+    const alpha = fade * 0.18;
+    const r     = p.r + p.grow * p.life;
+
+    p.angle += p.spin;
+    const grd = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, r);
+    grd.addColorStop(0,   `rgba(${p.cr},${p.cg},${p.cb},${alpha})`);
+    grd.addColorStop(0.45,`rgba(${p.cr},${p.cg},${p.cb},${alpha*0.55})`);
+    grd.addColorStop(1,   `rgba(${p.cr},${p.cg},${p.cb},0)`);
+
+    ctx.save();
+    ctx.translate(p.x, p.y);
+    ctx.rotate(p.angle);
+    ctx.scale(1, 0.55 + Math.sin(p.life*0.01)*0.15); // squash/stretch
+    ctx.translate(-p.x, -p.y);
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, r, 0, Math.PI*2);
+    ctx.fillStyle = grd;
+    ctx.fill();
+    ctx.restore();
+  }
+
+  function drawDust(p){
+    const prog  = p.life / p.maxLife;
+    const fade  = prog < 0.1 ? prog/0.1 : prog > 0.8 ? 1-(prog-0.8)/0.2 : 1;
+    const alpha = fade * 0.95;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+    ctx.fillStyle = `rgba(${p.cr},${p.cg},${p.cb},${alpha})`;
+    ctx.fill();
+    /* tiny glow halo */
+    const g2 = ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*4);
+    g2.addColorStop(0, `rgba(${p.cr},${p.cg},${p.cb},${alpha*0.3})`);
+    g2.addColorStop(1, `rgba(${p.cr},${p.cg},${p.cb},0)`);
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r*4, 0, Math.PI*2);
+    ctx.fillStyle = g2;
+    ctx.fill();
+  }
+
+  /* subtle horizontal bands of rising heat haze */
+  const STREAMS = 5;
+  const streams = Array.from({length:STREAMS}, (_,i)=>({
+    yFrac: 0.2 + i*0.16,
+    xOff: Math.random()*1000,
+    speed: 0.003 + Math.random()*0.003,
+  }));
+
+  function drawStream(s, t){
+    const y = H * s.yFrac;
+    const grd = ctx.createLinearGradient(0,y-40,0,y+40);
+    grd.addColorStop(0,   'rgba(201,168,76,0)');
+    grd.addColorStop(0.5, 'rgba(201,168,76,0.018)');
+    grd.addColorStop(1,   'rgba(201,168,76,0)');
+    ctx.fillStyle = grd;
+    ctx.fillRect(0, y-40, W, 80);
+  }
+
+  let t = 0;
+  function tick(){
+    /* clear + dark base so particles composite correctly */
+    ctx.clearRect(0,0,W,H);
+    ctx.fillStyle = 'rgba(0,0,0,0.92)';
+    ctx.fillRect(0,0,W,H);
+
+    streams.forEach(s => drawStream(s, t));
+
+    particles.forEach(p => {
+      p.life++;
+      p.x += p.vx + Math.sin(p.life*0.013 + p.angle)*0.12;
+      p.y += p.vy;
+      if(p.type==='smoke') drawSmoke(p);
+      else drawDust(p);
+      if(p.life >= p.maxLife) spawnParticle(p, false);
+    });
+
+    t++;
+    requestAnimationFrame(tick);
+  }
+
+  resize();
+  /* init pool AFTER resize so W/H are valid */
+  for(let i=0;i<POOL;i++){
+    const p = {};
+    spawnParticle(p, true);
+    p.life = rand(0, p.maxLife); // stagger start
+    particles.push(p);
+  }
+  tick();
+  window.addEventListener('resize', () => { resize(); });
+})();
+
+/* ── NAV SCROLL ───────────────────────────────────────────── */
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>60);},{passive:true});
+
+/* ── MOBILE MENU ──────────────────────────────────────────── */
+const hmb=document.getElementById('hmb');
+const mobNav=document.getElementById('mob-nav');
+hmb.addEventListener('click',()=>{const o=hmb.classList.toggle('open');hmb.setAttribute('aria-expanded',String(o));mobNav.classList.toggle('open',o);});
+mobNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hmb.classList.remove('open');hmb.setAttribute('aria-expanded','false');mobNav.classList.remove('open');}));
+
+/* ── SCROLL REVEALS ───────────────────────────────────────── */
+const rvEls=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}});},{threshold:.06,rootMargin:'0px 0px -10px 0px'});rvEls.forEach(el=>obs.observe(el));}else{rvEls.forEach(el=>el.classList.add('on'));}
+
+/* ── FAQ ──────────────────────────────────────────────────── */
+document.querySelectorAll('.fi').forEach(item=>{
+  const btn=item.querySelector('.fq');
+  btn.addEventListener('click',()=>{const o=item.classList.toggle('op');btn.setAttribute('aria-expanded',String(o));document.querySelectorAll('.fi').forEach(x=>{if(x!==item){x.classList.remove('op');x.querySelector('.fq').setAttribute('aria-expanded','false');}});});
+});
+
+/* ── CATEGORY COIN HOVER TILT ─────────────────────────────── */
+document.querySelectorAll('.ccoin-frame').forEach(f=>{
+  const coin=f.querySelector('.ccoin-coin');if(!coin)return;
+  f.addEventListener('mousemove',e=>{const r=f.getBoundingClientRect();const xp=(e.clientX-r.left)/r.width-.5;const yp=(e.clientY-r.top)/r.height-.5;coin.style.transform=`rotateX(${-yp*18}deg) rotateY(${xp*18}deg) scale(1.06)`;});
+  f.addEventListener('mouseleave',()=>{coin.style.transform='';});
+});
+
+/* ── SMOOTH SCROLL ────────────────────────────────────────── */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id==='#')return;const target=document.querySelector(id);if(target){e.preventDefault();const off=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'))||64;window.scrollTo({top:target.getBoundingClientRect().top+window.scrollY-off-20,behavior:'smooth'});}});});
+
+})();
+</script>
+</body>
+</html>
