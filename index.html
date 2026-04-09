@@ -537,6 +537,37 @@ body::before{
 }
 
 /* ═══════ REVIEWS ════════════════════════════════════════════ */
+/* ═══════ STARTER PACKS ══════════════════════════════════════ */
+.spsec{background:var(--bg2);}
+.spgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(36px,4vw,52px);}
+.spcard{
+  background:var(--bg4);border:1px solid var(--line);border-radius:20px;
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:border-color .25s,transform .3s var(--e1),box-shadow .3s;
+}
+.spcard:hover{border-color:var(--gbdr);transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.5),0 0 0 1px rgba(201,168,76,.08);}
+.spcard-img{width:100%;height:200px;overflow:hidden;background:var(--bg3);position:relative;}
+.spcard-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--e1);}
+.spcard:hover .spcard-img img{transform:scale(1.04);}
+.spcard-badge{
+  position:absolute;top:12px;left:12px;
+  font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  background:var(--gold);color:#0A0A0A;padding:4px 10px;border-radius:var(--rp);
+}
+.spcard-body{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column;gap:10px;}
+.spcard-name{font-size:15px;font-weight:700;color:var(--ink);line-height:1.3;}
+.spcard-includes{font-size:11px;color:var(--gold);font-weight:600;letter-spacing:.04em;}
+.spcard-desc{font-size:13px;color:var(--ink3);line-height:1.65;flex:1;}
+.spcard-footer{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:14px;border-top:1px solid var(--line2);}
+.spcard-price{font-size:20px;font-weight:800;color:var(--ink);letter-spacing:-.02em;}
+.spcard-cta{
+  font-size:12px;font-weight:700;letter-spacing:.02em;
+  padding:8px 16px;background:var(--gold);color:#0A0A0A;
+  border-radius:var(--rp);transition:background .15s,transform .15s;white-space:nowrap;
+}
+.spcard-cta:hover{background:var(--gold2);transform:translateY(-1px);}
+.sp-viewall{display:flex;justify-content:center;margin-top:32px;}
+
 .rsec{background:#F7F5F0;color:#1A1814;}
 .rsec .sh2{color:#1A1814;}
 .rsec .stext{color:#4A4640;}
@@ -684,7 +715,7 @@ body::before{
       <li><a href="#start">Get Started</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="https://kinzercoins.com" target="_blank" rel="noopener" class="nbtn-inline">Start Collecting</a></li>
+      <li><a href="https://kinzercoins.com/collections/im-new-to-ancient-coins" target="_blank" rel="noopener" class="nbtn-inline">Start Collecting</a></li>
     </ul>
     <button class="hbg" id="hmb" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -699,7 +730,7 @@ body::before{
   <a href="#start">Get Started</a>
   <a href="#reviews">Reviews</a>
   <a href="#faq">FAQ</a>
-  <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="nbtn">Start Collecting</a>
+  <a href="https://kinzercoins.com/collections/im-new-to-ancient-coins" target="_blank" rel="noopener" class="nbtn">Start Collecting</a>
 </nav>
 
 <!-- HERO - centered framer layout -->
@@ -720,8 +751,8 @@ body::before{
     <p class="hsub">Authentic coins from Rome, Greece, and Byzantium - $15 to $150. Start building a collection that outlasts you.</p>
 
     <div class="hctas">
-      <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bk">See the 5 Categories →</a>
-      <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bo">Why Ancient Coins?</a>
+      <a href="https://kinzercoins.com/collections/all" target="_blank" rel="noopener" class="btn bk">See the 5 Categories →</a>
+      <a href="#why" class="btn bo">Why Ancient Coins?</a>
     </div>
 
     <div class="htrust">
@@ -767,7 +798,7 @@ body::before{
         <p class="wbody">Not all ancient coins are created equal. After years of sourcing coins and helping thousands of first-time collectors, we've identified five categories that hit the perfect intersection of affordability, authenticity, and historical impact.</p>
         <p class="wbody">These aren't random picks. Each category was chosen because it lets a beginner spend $15–$150 and walk away with something genuinely 1,500–2,500 years old, legally owned, and worth showing off.</p>
         <blockquote class="wpull">"Every coin in these categories carries the actual touch of ancient hands - not a reproduction, not a cast. The real thing."</blockquote>
-        <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bk rv rv-d1" style="margin-top:28px;">Explore All 5 Categories →</a>
+        <a href="https://kinzercoins.com/collections/all" target="_blank" rel="noopener" class="btn bk rv rv-d1" style="margin-top:28px;">Explore All 5 Categories →</a>
       </div>
       <div class="glass-card rv rv-d2">
         <div class="crpan-title">The Five Categories</div>
@@ -838,11 +869,76 @@ body::before{
       <p class="stext" style="text-align:center;margin:12px auto 0;max-width:420px;">Three paths based on budget and ambition. Every coin authenticated, documented, ready to ship.</p>
     </div>
     <div class="sgrid">
-      <div class="scard rv rv-d1"><div class="sbdg">Budget Start</div><h3>The Taster</h3><p class="sfor">Perfect for first-timers who want to hold history without a big commitment.</p><div class="sprc">$15–$45<span> per coin</span></div><a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bo">Browse Tasters →</a></div>
-      <div class="scard ft rv rv-d2"><div class="sbdg">Most Popular</div><h3>The Collector</h3><p class="sfor">Serious about building a curated collection of display-worthy coins.</p><div class="sprc">$50–$100<span> per coin</span></div><a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bk">Browse Collectors →</a></div>
-      <div class="scard rv rv-d3"><div class="sbdg">Connoisseur</div><h3>The Enthusiast</h3><p class="sfor">Investors and serious collectors wanting exceptional, investment-grade pieces.</p><div class="sprc">$100–$150<span> per coin</span></div><a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bo">Browse Enthusiast →</a></div>
+      <div class="scard rv rv-d1"><div class="sbdg">Budget Start</div><h3>The Taster</h3><p class="sfor">Perfect for first-timers who want to hold history without a big commitment.</p><div class="sprc">$15–$45<span> per coin</span></div><a href="https://kinzercoins.com/collections/im-new-to-ancient-coins" target="_blank" rel="noopener" class="btn bo">Browse Tasters →</a></div>
+      <div class="scard ft rv rv-d2"><div class="sbdg">Most Popular</div><h3>The Collector</h3><p class="sfor">Serious about building a curated collection of display-worthy coins.</p><div class="sprc">$50–$100<span> per coin</span></div><a href="https://kinzercoins.com/collections/roman-empire" target="_blank" rel="noopener" class="btn bk">Browse Collectors →</a></div>
+      <div class="scard rv rv-d3"><div class="sbdg">Connoisseur</div><h3>The Enthusiast</h3><p class="sfor">Investors and serious collectors wanting exceptional, investment-grade pieces.</p><div class="sprc">$100–$150<span> per coin</span></div><a href="https://kinzercoins.com/collections/all" target="_blank" rel="noopener" class="btn bo">Browse Enthusiast →</a></div>
     </div>
     <p class="snote rv">"Every coin ships with a Certificate of Authenticity and a reference card explaining exactly who made it and when."</p>
+  </div>
+</section>
+
+<!-- STARTER PACKS -->
+<section class="sec spsec" id="packs" aria-labelledby="packs-heading">
+  <div class="ctr">
+    <div style="text-align:center;" class="rv">
+      <div class="slbl" style="margin:0 auto 18px;">Curated for Beginners</div>
+      <h2 class="sh2" id="packs-heading">Ready-Made <em>Starter Packs</em></h2>
+      <p class="stext" style="text-align:center;margin:12px auto 0;max-width:480px;">NGC-certified sets designed to give new collectors an immediate, authentic connection to ancient history. Open the box, hold history.</p>
+    </div>
+    <div class="spgrid">
+
+      <div class="spcard rv rv-d1">
+        <div class="spcard-img">
+          <img src="https://cdn.shopify.com/s/files/1/0970/6202/7570/files/your-first-ancient-starter-pack-constantine-dynasty-trio-ngc-fine-certified-4821671.jpg?v=1774976049" alt="Constantine Dynasty Trio Starter Pack"/>
+          <div class="spcard-badge">Best Starter</div>
+        </div>
+        <div class="spcard-body">
+          <div class="spcard-includes">3 NGC-Certified Coins</div>
+          <div class="spcard-name">Constantine Dynasty Trio</div>
+          <p class="spcard-desc">Constantine I, Constantius II, and Constantine II — three rulers who transformed Rome. Each coin authenticated and graded by NGC.</p>
+          <div class="spcard-footer">
+            <div class="spcard-price">$111.08</div>
+            <a href="https://kinzercoins.com/products/constantine-dynasty-trio-ngc-fine-bronze-starter" target="_blank" rel="noopener" class="spcard-cta">View Pack →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="spcard rv rv-d2">
+        <div class="spcard-img">
+          <img src="https://cdn.shopify.com/s/files/1/0970/6202/7570/files/roman-generals-starter-pack-from-commanders-to-emperors-ngc-certified-5384265.jpg?v=1775307425" alt="Roman Generals Starter Pack"/>
+          <div class="spcard-badge">Most Popular</div>
+        </div>
+        <div class="spcard-body">
+          <div class="spcard-includes">3 NGC-Certified Coins</div>
+          <div class="spcard-name">Roman Generals — From Commanders to Emperors</div>
+          <p class="spcard-desc">Diocletian, Maximian, and Constantine the Great — military leaders who became emperors during Rome's Tetrarchy era.</p>
+          <div class="spcard-footer">
+            <div class="spcard-price">$135.20</div>
+            <a href="https://kinzercoins.com/products/roman-generals-starter-pack-from-commanders-to-emperors-ngc-certified" target="_blank" rel="noopener" class="spcard-cta">View Pack →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="spcard rv rv-d3">
+        <div class="spcard-img">
+          <img src="https://cdn.shopify.com/s/files/1/0970/6202/7570/files/constantine-dynasty-starter-pack-5-ngc-certified-roman-bronze-coins-9069260.jpg?v=1774528686" alt="Constantine Dynasty 5-Coin Starter Pack"/>
+          <div class="spcard-badge">Best Value</div>
+        </div>
+        <div class="spcard-body">
+          <div class="spcard-includes">5 NGC-Certified Coins</div>
+          <div class="spcard-name">Constantine Dynasty — Full Set</div>
+          <p class="spcard-desc">Five coins from the House of Constantine — Constantine the Great, Crispus, Constantine II, Constantius II, and Constans I. All NGC authenticated.</p>
+          <div class="spcard-footer">
+            <div class="spcard-price">$192.60</div>
+            <a href="https://kinzercoins.com/products/constantine-dynasty-starter-pack-ngc-roman-bronze" target="_blank" rel="noopener" class="spcard-cta">View Pack →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="sp-viewall rv">
+      <a href="https://kinzercoins.com/collections/im-new-to-ancient-coins" target="_blank" rel="noopener" class="btn bo">View All Starter Packs →</a>
+    </div>
   </div>
 </section>
 
@@ -893,8 +989,8 @@ body::before{
       <h2 class="sh2" id="cta-heading">Your first ancient coin<br>is waiting.</h2>
       <p class="stext" style="text-align:center;margin:14px auto 36px;max-width:380px;">2,500 years of history. Starting at $15. Every coin authenticated, documented, ready to ship.</p>
       <div class="fcta-btns">
-        <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bk">Shop Kinzer Coins →</a>
-        <a href="https://kinzercoins.com" target="_blank" rel="noopener" class="btn bo">Browse Categories</a>
+        <a href="https://kinzercoins.com/collections/all" target="_blank" rel="noopener" class="btn bk">Shop Kinzer Coins →</a>
+        <a href="https://kinzercoins.com/collections/im-new-to-ancient-coins" target="_blank" rel="noopener" class="btn bo">Browse Starter Packs</a>
       </div>
     </div>
   </div>
@@ -908,7 +1004,7 @@ body::before{
         <a href="#top"><img src="logo.png" alt="Kinzer Coins" class="flogo"/></a>
         <p>Ancient coins for modern collectors. Authentic. Affordable. Meaningful.</p>
       </div>
-      <div class="fcol"><div class="fh">Collect</div><ul><li><a href="#cats">5 Categories</a></li><li><a href="#start">Starter Path</a></li><li><a href="https://kinzercoins.com" target="_blank" rel="noopener">Full Shop</a></li></ul></div>
+      <div class="fcol"><div class="fh">Collect</div><ul><li><a href="#cats">5 Categories</a></li><li><a href="#start">Starter Path</a></li><li><a href="https://kinzercoins.com/collections/all" target="_blank" rel="noopener">Full Shop</a></li></ul></div>
       <div class="fcol"><div class="fh">Learn</div><ul><li><a href="#why">Why 5 Coins?</a></li><li><a href="#faq">FAQ</a></li><li><a href="#reviews">Reviews</a></li></ul></div>
       <div class="fcol"><div class="fh">Contact</div><ul><li><a href="https://kinzercoins.com" target="_blank" rel="noopener">kinzercoins.com</a></li></ul></div>
     </div>
