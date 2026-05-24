@@ -196,6 +196,30 @@ body::before{
 }
 .hcon{position:relative;z-index:3;max-width:760px;}
 
+/* hero brand watermark — large rotating Kinzer coin standing behind the headline */
+.hlogo-bg{
+  position:absolute;left:50%;top:46%;
+  width:clamp(560px,96vw,1320px);height:auto;
+  transform:perspective(1800px) translate(-50%,-50%) rotateY(0deg);
+  transform-origin:50% 50%;
+  z-index:2;pointer-events:none;
+  opacity:0;
+  filter:drop-shadow(0 0 100px rgba(201,168,76,.4));
+  animation:hlogo-in 1.4s var(--e1) .15s forwards,
+            hlogo-spin 24s linear 1.6s infinite;
+}
+@keyframes hlogo-in{
+  from{opacity:0;transform:perspective(1800px) translate(-50%,-50%) rotateY(0deg) scale(.94);filter:blur(8px) drop-shadow(0 0 0 rgba(201,168,76,0));}
+  to{opacity:.22;transform:perspective(1800px) translate(-50%,-50%) rotateY(0deg) scale(1);filter:blur(0) drop-shadow(0 0 100px rgba(201,168,76,.4));}
+}
+@keyframes hlogo-spin{
+  from{transform:perspective(1800px) translate(-50%,-50%) rotateY(0deg);}
+  to{transform:perspective(1800px) translate(-50%,-50%) rotateY(360deg);}
+}
+@media (prefers-reduced-motion:reduce){
+  .hlogo-bg{animation:hlogo-in 1.4s var(--e1) .15s forwards;}
+}
+
 /* framer-style badge */
 .hbadge{
   display:inline-flex;align-items:center;gap:8px;
@@ -777,6 +801,7 @@ body::before{
     <source src="https://videos.pexels.com/video-files/6827359/6827359-hd_1920_1080_25fps.mp4" type="video/mp4"/>
   </video>
   <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <img class="hlogo-bg" src="logo.png" alt="" aria-hidden="true"/>
 
   <div class="hcon">
     <div class="hbadge">
