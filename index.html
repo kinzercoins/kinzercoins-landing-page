@@ -71,7 +71,6 @@
   <link rel="preconnect" href="https://videos.pexels.com"/>
   <link rel="preconnect" href="https://upload.wikimedia.org" crossorigin/>
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin/>
-  <link rel="dns-prefetch" href="https://randomuser.me"/>
 <style>
 /* ═══════ FRAMER DESIGN TOKENS ══════════════════════════════ */
 :root{
@@ -1310,6 +1309,28 @@ document.querySelectorAll('.ccoin-frame').forEach(f=>{
 
 /* ── SMOOTH SCROLL ────────────────────────────────────────── */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id==='#')return;const target=document.querySelector(id);if(target){e.preventDefault();const off=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'))||64;window.scrollTo({top:target.getBoundingClientRect().top+window.scrollY-off-20,behavior:'smooth'});}});});
+
+/* ── DYNAMIC SHOPIFY PRICING ──────────────────────────────── */
+/* Pulls live prices for each Best-Selling card from Shopify's
+   public product.json. Silent-fail: hardcoded "Starting around $X"
+   stays put if fetch fails, so nothing ever breaks visually.       */
+document.querySelectorAll('.spcard').forEach(card=>{
+  const link=card.querySelector('a[href*="/products/"]');
+  const priceEl=card.querySelector('.spcard-price');
+  if(!link||!priceEl)return;
+  const slug=link.href.split('/products/')[1]?.split(/[/?#]/)[0];
+  if(!slug)return;
+  fetch(`https://kinzercoins.com/products/${slug}.json`,{cache:'no-store'})
+    .then(r=>r.ok?r.json():null)
+    .then(d=>{
+      const p=parseFloat(d?.product?.variants?.[0]?.price);
+      if(isFinite(p)&&p>0){
+        const rounded=Math.max(5,Math.floor(p/5)*5);
+        priceEl.textContent=`Starting around $${rounded}`;
+      }
+    })
+    .catch(()=>{/* keep hardcoded fallback */});
+});
 
 })();
 </script>
