@@ -36,7 +36,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="preconnect" href="https://cdn.gamma.app" crossorigin/>
+  <link rel="preconnect" href="https://d8j0ntlcm91z4.cloudfront.net" crossorigin/>
   <link rel="preconnect" href="https://kinzercoins.com" crossorigin/>
 
 <style>
@@ -119,17 +119,16 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
 }
 .hero-illust{
   position:absolute;inset:0;
-  background-image:url('https://cdn.gamma.app/6fj9vgr17qjsdrf/design-anything/4bH1gB9pMVav1Bm1ohjeW/2rGy0CCmEbDF-CbB_EVJR.jpg');
+  background-image:url('https://d8j0ntlcm91z4.cloudfront.net/user_3CIwHC9cSeSP5IcEtn4x6k0fty6/hf_20260916_154203_e5c168af-d2f2-4541-8921-5e975635ee38.png');
   background-size:cover;background-position:center;
-  opacity:.55;
-  filter:contrast(1.05) brightness(.85);
+  opacity:1;
   z-index:0;
 }
 .hero::after{
   content:'';position:absolute;inset:0;z-index:1;pointer-events:none;
   background:
-    linear-gradient(to bottom,rgba(10,10,10,.4) 0%,rgba(10,10,10,.2) 50%,rgba(10,10,10,.85) 100%),
-    linear-gradient(to right,rgba(10,10,10,.4) 0%,transparent 30%,transparent 70%,rgba(10,10,10,.4) 100%);
+    radial-gradient(ellipse 55% 45% at 50% 45%,rgba(10,10,10,.55) 0%,transparent 70%),
+    linear-gradient(to bottom,rgba(10,10,10,.15) 0%,rgba(10,10,10,.1) 45%,rgba(10,10,10,.92) 100%);
 }
 .hcon{position:relative;z-index:2;text-align:center;max-width:720px;}
 .hh1{
@@ -157,7 +156,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
   border:1px solid var(--line);
   border-radius:4px;
   padding:32px 34px;
-  display:grid;grid-template-columns:130px 1fr;gap:28px;align-items:center;
+  display:grid;grid-template-columns:160px 1fr;gap:28px;align-items:center;
   transition:border-color .3s var(--e1),transform .3s var(--e1),background .3s var(--e1);
   overflow:hidden;
 }
@@ -170,14 +169,16 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
 .path:hover::before{opacity:1;}
 .path-img{
   position:relative;z-index:1;
-  width:130px;height:130px;
+  width:160px;height:160px;
   display:flex;align-items:center;justify-content:center;
-  background:radial-gradient(circle,rgba(255,255,255,.03) 0%,transparent 70%);
+  background:radial-gradient(circle,rgba(255,255,255,.04) 0%,transparent 65%);
 }
 .path-img img{
   max-width:100%;max-height:100%;
   border-radius:50%;
-  filter:drop-shadow(0 4px 24px rgba(0,0,0,.6));
+  filter:drop-shadow(0 6px 30px rgba(0,0,0,.7));
+  object-fit:cover;
+  width:100%;height:100%;
 }
 .path-body{position:relative;z-index:1;}
 .path-title{
@@ -289,7 +290,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 <section class="paths" aria-label="Choose your path">
 
   <a href="/love-history" class="path">
-    <div class="path-img"><img src="https://kinzercoins.com/cdn/shop/files/bronze-unit-from-syracuse-under-king-hieron-ii-about-2300-2200-years-ago-5533539.webp?v=1771883954&width=260" alt="" loading="eager" decoding="async"/></div>
+    <div class="path-img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CIwHC9cSeSP5IcEtn4x6k0fty6/hf_20260916_154208_c1f5d82d-9adf-40b5-9d37-d583f149c793.png" alt="" loading="eager" decoding="async"/></div>
     <div class="path-body">
       <div class="path-title">I love history</div>
       <p class="path-desc">Show me how ancient coins connect to it.</p>
@@ -298,7 +299,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   </a>
 
   <a href="/start-here" class="path">
-    <div class="path-img"><img src="https://kinzercoins.com/cdn/shop/files/ancient-roman-bronze-coin-of-constantine-the-great-c-ad-300-romes-first-christian-emperor-ngc-certified-1160324.webp?v=1772584960&width=260" alt="" loading="eager" decoding="async"/></div>
+    <div class="path-img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CIwHC9cSeSP5IcEtn4x6k0fty6/hf_20260916_154210_353a12f8-39c3-4c60-bb1c-b20492aa26a9.png" alt="" loading="eager" decoding="async"/></div>
     <div class="path-body">
       <div class="path-title">I'm curious about ancient coins</div>
       <p class="path-desc">Start me from the beginning.</p>
@@ -307,7 +308,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   </a>
 
   <a href="/history-through-coins" class="path">
-    <div class="path-img"><img src="https://kinzercoins.com/cdn/shop/files/roman-silver-coin-emperor-caracalla-about-1800-years-old-ngc-certified-featured-in-gladiator-ii-9025223.webp?v=1772139494&width=260" alt="" loading="eager" decoding="async"/></div>
+    <div class="path-img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CIwHC9cSeSP5IcEtn4x6k0fty6/hf_20260916_154213_651f2ce1-47ab-40fa-b935-dc26b15bcab7.png" alt="" loading="eager" decoding="async"/></div>
     <div class="path-body">
       <div class="path-title">I already know ancient history</div>
       <p class="path-desc">Show me the coins behind the people and events.</p>
@@ -316,7 +317,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   </a>
 
   <a href="/collector" class="path">
-    <div class="path-img"><img src="https://kinzercoins.com/cdn/shop/files/ancient-judaean-coin-of-mattathias-antigonus-ii-40-37-bc-last-king-of-judaea-ngc-certified-8487845.png?v=1781075230&width=260" alt="" loading="eager" decoding="async"/></div>
+    <div class="path-img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CIwHC9cSeSP5IcEtn4x6k0fty6/hf_20260916_154215_183a37ac-69d2-413a-a379-a83e2d2cdb15.png" alt="" loading="eager" decoding="async"/></div>
     <div class="path-body">
       <div class="path-title">I already collect ancient coins</div>
       <p class="path-desc">Take me deeper.</p>
