@@ -83,6 +83,28 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
 .back a::before{content:'←';color:var(--gold);}
 .back a:hover{color:var(--gold);}
 
+/* REROUTE — "not sure this is your path?" back-to-decision-tree callout */
+.reroute{
+  max-width:var(--mx);margin:60px auto 0;
+  padding:36px var(--g) 40px;
+  text-align:center;
+  border-top:1px solid var(--line2);
+  background:radial-gradient(ellipse 70% 100% at 50% 0%,rgba(201,168,76,.05),transparent 70%);
+}
+.reroute-q{
+  font-family:var(--serif);font-size:clamp(18px,2vw,22px);font-weight:500;
+  color:var(--ink2);margin-bottom:12px;letter-spacing:-.005em;
+}
+.reroute-cta{
+  display:inline-flex;align-items:center;gap:10px;
+  color:var(--gold);font-size:13px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;
+  border:1px solid var(--gold);padding:12px 22px;border-radius:var(--rp);
+  transition:background .2s,color .2s;
+}
+.reroute-cta::before{content:'←';font-size:15px;}
+.reroute-cta:hover{background:var(--gold);color:var(--bg);}
+
 /* FOOTER */
 .foot{border-top:1px solid var(--line2);padding:32px var(--g);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;max-width:var(--mx);margin:60px auto 0;font-size:12px;color:var(--ink3);}
 .foot a{color:var(--ink2);}
