@@ -4,14 +4,14 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>Start Ancients — A Kinzer Coins Resource</title>
-  <meta name="description" content="Where are you starting? Choose the path that fits you best. A guided discovery engine for history fans, beginners, and collectors of ancient coins."/>
+  <meta name="description" content="Own a piece of ancient history. Real coins from Rome, Greece, Judaea, Byzantium and beyond — still surprisingly affordable. A guided discovery engine for history fans, beginners, and collectors."/>
   <link rel="canonical" href="https://startancients.com/"/>
 
   <link rel="icon" type="image/png" href="logo.png"/>
   <link rel="apple-touch-icon" href="logo.png"/>
 
   <meta property="og:title" content="Start Ancients — A Kinzer Coins Resource"/>
-  <meta property="og:description" content="Where are you starting? Choose the path that fits you best."/>
+  <meta property="og:description" content="Own a piece of ancient history. Real coins from Rome, Greece, Judaea, Byzantium and beyond — still surprisingly affordable. Where are you starting?"/>
   <meta property="og:image" content="https://startancients.com/logo.png"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://startancients.com/"/>
@@ -19,7 +19,7 @@
 
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Start Ancients — A Kinzer Coins Resource"/>
-  <meta name="twitter:description" content="Where are you starting? Choose the path that fits you best."/>
+  <meta name="twitter:description" content="Own a piece of ancient history. Real coins from Rome, Greece, Judaea, Byzantium and beyond — still surprisingly affordable. Where are you starting?"/>
   <meta name="twitter:image" content="https://startancients.com/logo.png"/>
 
   <script type="application/ld+json">
@@ -130,17 +130,35 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
     radial-gradient(ellipse 55% 45% at 50% 45%,rgba(10,10,10,.55) 0%,transparent 70%),
     linear-gradient(to bottom,rgba(10,10,10,.15) 0%,rgba(10,10,10,.1) 45%,rgba(10,10,10,.92) 100%);
 }
-.hcon{position:relative;z-index:2;text-align:center;max-width:720px;}
+.hcon{position:relative;z-index:2;text-align:center;max-width:760px;}
 .hh1{
   font-family:var(--serif);
-  font-size:clamp(44px,7.2vw,88px);font-weight:600;
+  font-size:clamp(40px,6.2vw,76px);font-weight:600;
   line-height:1.02;letter-spacing:-.02em;color:var(--ink);
-  margin-bottom:26px;
+  margin-bottom:22px;
 }
-.hdiv{width:56px;height:1px;background:var(--gold);margin:22px auto 24px;opacity:.7;}
-.hsub{
-  font-size:clamp(15px,1.5vw,18px);color:var(--ink2);
-  max-width:520px;margin:0 auto;
+.hdiv{width:56px;height:1px;background:var(--gold);margin:20px auto 26px;opacity:.7;}
+.hlead{
+  font-size:clamp(15px,1.4vw,17px);color:var(--ink2);
+  max-width:600px;margin:0 auto 16px;line-height:1.7;
+}
+.hlead:last-child{margin-bottom:0;}
+.hlead strong{color:var(--ink);font-weight:600;}
+
+/* Section header above the 4 path cards */
+.paths-intro{
+  padding:56px var(--g) 8px;
+  max-width:var(--mx);margin:0 auto;
+  text-align:center;
+}
+.paths-h2{
+  font-family:var(--serif);
+  font-size:clamp(30px,4vw,50px);font-weight:600;
+  line-height:1.08;letter-spacing:-.02em;color:var(--ink);
+  margin-bottom:12px;
+}
+.paths-sub{
+  color:var(--ink3);font-size:15px;letter-spacing:.01em;
 }
 
 /* ═══════ PATH GRID ══════════════════════════════════════════ */
@@ -186,8 +204,8 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
   line-height:1.15;color:var(--ink);margin-bottom:8px;letter-spacing:-.01em;
 }
 .path-desc{
-  font-size:14px;color:var(--ink3);line-height:1.55;margin-bottom:20px;
-  max-width:280px;
+  font-size:14px;color:var(--ink3);line-height:1.6;margin-bottom:20px;
+  max-width:360px;
 }
 .path-btn{
   display:inline-flex;align-items:center;gap:8px;
@@ -281,10 +299,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 <section class="hero" aria-labelledby="hero-heading">
   <div class="hero-illust" aria-hidden="true"></div>
   <div class="hcon">
-    <h1 class="hh1" id="hero-heading">Where are you starting?</h1>
+    <h1 class="hh1" id="hero-heading">Own a Piece of<br>Ancient History</h1>
     <div class="hdiv" aria-hidden="true"></div>
-    <p class="hsub">Choose the path that fits you best.</p>
+    <p class="hlead">Ancient coins are real objects from the worlds of Rome, Greece, Judaea, Byzantium, and beyond. They were carried, spent, lost, buried, and rediscovered — and many are still surprisingly affordable to collect today.</p>
+    <p class="hlead"><strong>You don't need to be an expert to start.</strong> Whether you already love ancient history, know something about coins, or are simply curious, Start Ancients will help you find a way into the hobby that makes sense for you.</p>
   </div>
+</section>
+
+<section class="paths-intro" aria-labelledby="paths-heading">
+  <h2 class="paths-h2" id="paths-heading">Where are you starting?</h2>
+  <p class="paths-sub">Choose the path that fits you best.</p>
 </section>
 
 <section class="paths" aria-label="Choose your path">
@@ -293,7 +317,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
     <div class="path-img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CIwHC9cSeSP5IcEtn4x6k0fty6/hf_20260916_154208_c1f5d82d-9adf-40b5-9d37-d583f149c793.png" alt="" loading="eager" decoding="async"/></div>
     <div class="path-body">
       <div class="path-title">I love history</div>
-      <p class="path-desc">Show me how ancient coins connect to it.</p>
+      <p class="path-desc">Ancient coins are miniature historical documents. Discover how emperors, wars, religion, politics, and everyday life were recorded in metal — and how you can own a piece of that story.</p>
       <span class="path-btn">Explore path</span>
     </div>
   </a>
@@ -302,7 +326,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
     <div class="path-img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CIwHC9cSeSP5IcEtn4x6k0fty6/hf_20260916_154210_353a12f8-39c3-4c60-bb1c-b20492aa26a9.png" alt="" loading="eager" decoding="async"/></div>
     <div class="path-body">
       <div class="path-title">I'm curious about ancient coins</div>
-      <p class="path-desc">Start me from the beginning.</p>
+      <p class="path-desc">Start with the basics: what ancient coins are, how much they cost, how authenticity works, and how to choose a first coin without feeling overwhelmed.</p>
       <span class="path-btn">Explore path</span>
     </div>
   </a>
@@ -311,7 +335,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
     <div class="path-img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CIwHC9cSeSP5IcEtn4x6k0fty6/hf_20260916_154213_651f2ce1-47ab-40fa-b935-dc26b15bcab7.png" alt="" loading="eager" decoding="async"/></div>
     <div class="path-body">
       <div class="path-title">I already know ancient history</div>
-      <p class="path-desc">Show me the coins behind the people and events.</p>
+      <p class="path-desc">Explore the coins behind the people, events, and civilizations you already know — from Rome and Greece to Judaea, Byzantium, and beyond.</p>
       <span class="path-btn">Explore path</span>
     </div>
   </a>
@@ -320,7 +344,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
     <div class="path-img"><img src="https://d8j0ntlcm91z4.cloudfront.net/user_3CIwHC9cSeSP5IcEtn4x6k0fty6/hf_20260916_154215_183a37ac-69d2-413a-a379-a83e2d2cdb15.png" alt="" loading="eager" decoding="async"/></div>
     <div class="path-body">
       <div class="path-title">I already collect ancient coins</div>
-      <p class="path-desc">Take me deeper.</p>
+      <p class="path-desc">Go deeper into denominations, dynasties, attribution, collecting strategies, overlooked series, and more advanced areas of the hobby.</p>
       <span class="path-btn">Explore path</span>
     </div>
   </a>
