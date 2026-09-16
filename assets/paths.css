@@ -18,15 +18,17 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
 
 /* HEADER */
 .head{position:sticky;top:0;z-index:10;padding:20px var(--g);display:flex;align-items:center;gap:24px;max-width:var(--mx);margin:0 auto;background:linear-gradient(to bottom,rgba(10,10,10,.95),rgba(10,10,10,.75));backdrop-filter:blur(10px);}
-.brand{display:flex;flex-direction:column;line-height:1;}
-.brand-name{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:-.01em;color:var(--gold);}
-.brand-sub{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);margin-top:5px;}
+.brand{display:flex;flex-direction:column;line-height:1;min-width:0;flex-shrink:0;}
+.brand-name{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:-.01em;color:var(--gold);white-space:nowrap;}
+.brand-sub{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);margin-top:5px;white-space:nowrap;}
 .nav{display:flex;gap:32px;margin-left:auto;}
 .nav a{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2);transition:color .2s;}
 .nav a:hover,.nav a.active{color:var(--gold);}
-.cta-visit{border:1px solid var(--gold);color:var(--gold);padding:11px 20px;border-radius:2px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;transition:background .2s,color .2s;}
+.cta-visit{border:1px solid var(--gold);color:var(--gold);padding:11px 20px;border-radius:2px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;transition:background .2s,color .2s;white-space:nowrap;flex-shrink:0;}
 .cta-visit:hover{background:var(--gold);color:var(--bg);}
 .cta-visit::after{content:'→';font-size:14px;}
+.cta-visit .cta-full{display:inline;}
+.cta-visit .cta-short{display:none;}
 
 /* PATH HERO */
 .phero{position:relative;padding:clamp(60px,10vw,120px) var(--g) clamp(50px,7vw,90px);max-width:var(--mx);margin:0 auto;text-align:center;overflow:hidden;}
@@ -119,7 +121,11 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
 }
 @media (max-width:520px){
   .brand-sub{display:none;}
-  .cta-visit{padding:9px 12px;font-size:10px;letter-spacing:.14em;}
+  .brand-name{font-size:20px;}
+  .cta-visit{padding:9px 12px;font-size:10px;letter-spacing:.12em;gap:6px;}
+  .cta-visit .cta-full{display:none;}
+  .cta-visit .cta-short{display:inline;}
+  .head{padding:14px var(--g);gap:12px;}
   .tcard{padding:22px 22px 20px;}
   .q-q{font-size:17px;}
   .foot{flex-direction:column;text-align:center;}
