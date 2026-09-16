@@ -79,11 +79,33 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
 .btn-ghost:hover{background:var(--gold);color:var(--bg);}
 .pcta-btns{display:inline-flex;gap:14px;flex-wrap:wrap;justify-content:center;}
 
-/* BREADCRUMB / BACK */
-.back{padding:16px var(--g) 0;max-width:var(--mx);margin:0 auto;}
-.back a{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);display:inline-flex;align-items:center;gap:8px;transition:color .2s;}
-.back a::before{content:'←';color:var(--gold);}
-.back a:hover{color:var(--gold);}
+/* BREADCRUMB / BACK — sticky pill, always in reach */
+.back{
+  position:sticky;top:76px;z-index:9;
+  padding:14px var(--g);
+  max-width:var(--mx);margin:0 auto;
+  background:linear-gradient(to bottom,rgba(10,10,10,.92) 0%,rgba(10,10,10,.6) 70%,rgba(10,10,10,0) 100%);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  pointer-events:none;
+}
+.back a{
+  pointer-events:auto;
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold);
+  padding:10px 20px;
+  border:1px solid rgba(201,168,76,.45);border-radius:var(--rp);
+  background:rgba(0,0,0,.55);
+  box-shadow:0 4px 20px rgba(0,0,0,.4);
+  transition:background .2s,color .2s,border-color .2s,transform .2s;
+}
+.back a::before{content:'←';font-size:16px;line-height:1;}
+.back a:hover{background:var(--gold);color:var(--bg);border-color:var(--gold);transform:translateX(-2px);}
+@media (max-width:520px){
+  .back{padding:10px var(--g);top:64px;}
+  .back a{font-size:12px;padding:9px 16px;letter-spacing:.08em;}
+}
 
 /* REROUTE — "not sure this is your path?" back-to-decision-tree callout */
 .reroute{
