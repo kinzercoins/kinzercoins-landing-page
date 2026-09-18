@@ -335,15 +335,18 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
 }
 .shop-card-img{
   aspect-ratio:1/1;
-  background:#F5F1E8;
+  background:transparent;
   display:flex;align-items:center;justify-content:center;
-  padding:22px;
+  padding:28px 22px 16px;
 }
 .shop-card-img img{
   max-width:100%;max-height:100%;
   object-fit:contain;
   display:block;
+  filter:drop-shadow(0 6px 18px rgba(0,0,0,.55));
+  transition:transform .5s var(--e1);
 }
+.shop-card:hover .shop-card-img img{transform:translateY(-4px) scale(1.02);}
 .shop-card-body{
   padding:24px 24px 28px;
   display:flex;flex-direction:column;flex:1;
@@ -509,7 +512,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
   <div class="shop-preview-grid">
 
     <a href="https://kinzercoins.com/collections/roman-empire?utm_source=startancients&amp;utm_medium=module&amp;utm_campaign=ready-to-hold&amp;utm_content=rome" target="_blank" rel="noopener" class="shop-card">
-      <div class="shop-card-img"><img src="https://cdn.shopify.com/s/files/1/0970/6202/7570/files/constantine-the-great-ancient-roman-bronze-coin-ad-306-337-ngc-certifiedroman-imperial-coins-9645174.jpg?v=1787538367" alt="Constantine the Great NGC-certified Roman bronze coin" loading="lazy" decoding="async"/></div>
+      <div class="shop-card-img"><img src="/assets/shop/constantine.png" alt="Constantine the Great NGC-certified Roman bronze coin" loading="lazy" decoding="async"/></div>
       <div class="shop-card-body">
         <div class="shop-card-title">Start with <em>Rome</em></div>
         <p class="shop-card-desc">Constantine, Aurelian, Diocletian — bronze coins of the emperors from $37.50, NGC-certified.</p>
@@ -518,7 +521,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
     </a>
 
     <a href="https://kinzercoins.com/collections/biblical-judaean?utm_source=startancients&amp;utm_medium=module&amp;utm_campaign=ready-to-hold&amp;utm_content=biblical" target="_blank" rel="noopener" class="shop-card">
-      <div class="shop-card-img"><img src="https://cdn.shopify.com/s/files/1/0970/6202/7570/files/judaea-alexander-jannaeus-bronze-prutah-widows-mite-biblical-type-ngc-certified-4522899.webp?v=1771884077" alt="Alexander Jannaeus widow's mite Judaean bronze prutah" loading="lazy" decoding="async"/></div>
+      <div class="shop-card-img"><img src="/assets/shop/widows-mite.png" alt="Alexander Jannaeus widow's mite Judaean bronze prutah in NGC slab" loading="lazy" decoding="async"/></div>
       <div class="shop-card-body">
         <div class="shop-card-title">Start with the <em>Biblical world</em></div>
         <p class="shop-card-desc">The Widow's Mite, Herod's prutot, coins of Judaea in the New Testament era — from $42.50.</p>
@@ -527,10 +530,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
     </a>
 
     <a href="https://kinzercoins.com/collections/greek?utm_source=startancients&amp;utm_medium=module&amp;utm_campaign=ready-to-hold&amp;utm_content=greek" target="_blank" rel="noopener" class="shop-card">
-      <div class="shop-card-img"><img src="https://cdn.shopify.com/s/files/1/0970/6202/7570/files/ancient-bronze-coin-of-philip-ii-of-macedon-father-of-alexander-the-great-struck-in-the-4th-century-bc-around-the-time-of-his-assassination-album-history-collec-3723991.webp?v=1771883782" alt="Philip II of Macedon ancient Greek bronze coin" loading="lazy" decoding="async"/></div>
+      <div class="shop-card-img"><img src="/assets/shop/medusa.png" alt="Amisos Greek bronze coin featuring Medusa, struck under Mithradates VI, in NGC slab" loading="lazy" decoding="async"/></div>
       <div class="shop-card-body">
         <div class="shop-card-title">Start with <em>Greece</em></div>
-        <p class="shop-card-desc">Philip II of Macedon, Syracuse, Amisos — the polis bronze from before Rome absorbed it all.</p>
+        <p class="shop-card-desc">Medusa, Zeus, Philip II of Macedon — the polis bronze from before Rome absorbed the Greek world. From $85.50.</p>
         <span class="shop-card-cta">Browse Greek coins</span>
       </div>
     </a>
